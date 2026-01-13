@@ -1,35 +1,25 @@
-import { Battery, Wrench, Cpu, Gauge, Settings, Shield } from "lucide-react";
+import { Wrench, Sparkles, CircleDot, SprayCan } from "lucide-react";
 
 const services = [
   {
-    icon: Battery,
-    title: "Battery Service",
-    description: "Full battery diagnostics, cell replacement, and optimization for maximum range and performance."
-  },
-  {
-    icon: Cpu,
-    title: "Motor Repair",
-    description: "Complete motor rebuilds, controller diagnostics, and electrical system troubleshooting."
-  },
-  {
     icon: Wrench,
-    title: "Full Tune-Ups",
-    description: "Comprehensive inspections, brake adjustments, suspension tuning, and overall maintenance."
+    title: "Parts Installation",
+    description: "Professional installation of all components and upgrades for your electric dirtbike."
   },
   {
-    icon: Gauge,
-    title: "Performance Upgrades",
-    description: "Speed unlocks, controller upgrades, and custom performance tuning for your riding style."
+    icon: Sparkles,
+    title: "Metal Polishing",
+    description: "Restore the shine to your bike's metal parts with our expert polishing services."
   },
   {
-    icon: Settings,
-    title: "Parts & Accessories",
-    description: "Genuine OEM parts and quality aftermarket components. We source what you need."
+    icon: CircleDot,
+    title: "Tires & Tubes",
+    description: "Tire mounting, tube replacement, and balancing to keep you rolling smoothly on any terrain."
   },
   {
-    icon: Shield,
-    title: "Warranty Work",
-    description: "Authorized service center for major electric dirtbike brands. Keep your warranty intact."
+    icon: SprayCan,
+    title: "Bike Cleaning",
+    description: "Thorough cleaning and detailing to keep your electric dirtbike looking brand new."
   }
 ];
 
