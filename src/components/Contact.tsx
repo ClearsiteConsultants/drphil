@@ -7,7 +7,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "1234 Trail Rd, Moto City, CA 90210"
+    value: "7947 N Copperbend Rd, Eagle Mountain, UT"
   },
   {
     icon: Phone,
