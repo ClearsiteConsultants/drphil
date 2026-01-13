@@ -9,14 +9,13 @@ const Hero = ({ heroImage }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center gradient-hero overflow-hidden pt-20">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 flex items-center justify-center">
         <img 
           src={heroImage} 
-          alt="Electric dirtbike" 
-          className="w-full h-full object-cover opacity-40"
+          alt="E-Moto Repair" 
+          className="w-full max-w-4xl h-auto object-contain opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
       </div>
 
       {/* Electric Grid Pattern */}
