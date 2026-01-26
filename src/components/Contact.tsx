@@ -8,23 +8,23 @@ import { useToast } from "@/hooks/use-toast";
 const contactInfo = [
   {
     icon: MapPin,
-    label: "Location",
-    value: "7947 N Copperbend Rd, Eagle Mountain, UT"
+    label: "Service Area",
+    value: "Eagle Mountain, UT & surrounding areas"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "(801) 514-6485"
+    value: "(801) 369-3122"
   },
   {
     icon: Mail,
     label: "Email",
-    value: "aidenmcintosh102011@gmail.com"
+    value: "doctorphilchiro@gmail.com"
   },
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon-Fri 3pm to 11pm, Sat-Sun 7pm to 11:30pm"
+    value: "By appointment - same-day availability"
   }
 ];
 
@@ -76,16 +76,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 tracking-wider uppercase">Get In Touch</p>
+          <p className="text-primary font-medium mb-2 tracking-wider uppercase">Schedule Your Care</p>
           <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
-            READY TO RIDE?
+            GET IN TOUCH
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Drop us a line and we'll get back to you within 24 hours. Or just stop by – we love talking bikes.
+            Ready to experience convenient, personalized chiropractic care? Contact us for a free consultation or to schedule your appointment.
           </p>
         </div>
 
@@ -105,14 +105,14 @@ const Contact = () => {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-muted-foreground mb-2">Bike Model</label>
-                <Input name="bike_model" placeholder="e.g., Sur-Ron Light Bee X" className="bg-background/50" />
+                <label className="block text-sm font-medium text-muted-foreground mb-2">Phone</label>
+                <Input name="phone" type="tel" placeholder="(555) 000-0000" className="bg-background/50" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-muted-foreground mb-2">Message</label>
                 <Textarea 
                   name="message"
-                  placeholder="Tell us about your repair needs..."
+                  placeholder="Tell us about your health goals or questions..."
                   rows={4}
                   className="bg-background/50"
                   required

@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 220 15% 4%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 220 13% 20%;
 
-    --card: 215 25% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 98%;
+    --card-foreground: 220 13% 20%;
 
-    --popover: 215 25% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 20%;
 
-    --primary: 210 100% 50%;
+    --primary: 92 36% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 20% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 213 64% 23%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 15%;
-    --muted-foreground: 210 15% 55%;
+    --muted: 220 12% 65%;
+    --muted-foreground: 220 12% 50%;
 
-    --accent: 200 100% 60%;
-    --accent-foreground: 220 15% 4%;
+    --accent: 92 36% 52%;
+    --accent-foreground: 220 13% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 18%;
-    --input: 215 20% 18%;
-    --ring: 210 100% 50%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 92 36% 42%;
 
     --radius: 0.5rem;
 
@@ -40,12 +40,12 @@
     --font-display: 'Bebas Neue', sans-serif;
     --font-body: 'Inter', sans-serif;
     
-    --glow-primary: 0 0 30px hsl(210 100% 50% / 0.4);
-    --glow-primary-intense: 0 0 60px hsl(210 100% 50% / 0.6);
+    --glow-primary: 0 0 30px hsl(92 36% 42% / 0.15);
+    --glow-primary-intense: 0 0 60px hsl(92 36% 42% / 0.25);
     
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 4%) 0%, hsl(215 25% 10%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(215 25% 10%) 0%, hsl(215 25% 6%) 100%);
-    --gradient-electric: linear-gradient(90deg, hsl(210 100% 50%) 0%, hsl(200 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 13% 97%) 100%);
+    --gradient-electric: linear-gradient(90deg, hsl(92 36% 42%) 0%, hsl(92 36% 52%) 100%);
   }
 
   .dark {

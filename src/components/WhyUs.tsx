@@ -1,45 +1,45 @@
-import { CheckCircle, Clock, Award, Users, DollarSign } from "lucide-react";
+import { CheckCircle, Calendar, Zap, Award, Users, Heart } from "lucide-react";
 
 const features = [
   {
-    icon: Clock,
-    title: "Fast Turnaround",
-    description: "Most repairs completed within 2-6 days. We know you want to get back on the trail."
+    icon: Calendar,
+    title: "Same-Day Availability",
+    description: "Get appointments fast. No long waiting lists – we make time for you when you need it."
   },
   {
-    icon: DollarSign,
-    title: "Best Value",
-    description: "Very inexpensive rates and we find the best deals on parts to save you money."
+    icon: Heart,
+    title: "Personalized Care",
+    description: "Treatment tailored to your unique needs, not a one-size-fits-all approach."
   },
   {
-    icon: Users,
-    title: "Rider Owned",
-    description: "Founded by electric dirtbike enthusiasts who understand what riders need."
+    icon: Zap,
+    title: "Expert Training",
+    description: "25+ years of experience combining chiropractic, sports medicine, and neuro expertise."
   }
 ];
 
 const benefits = [
-  "Transparent pricing with no hidden fees",
-  "Free diagnostics on all repairs",
-  "30-day guaranteed refund on all services",
-  "Genuine OEM and quality aftermarket parts",
-  "Pickup service available"
+  "Free consultation to discuss your health goals",
+  "45-60 minute initial appointments (not rushed)",
+  "No waiting room stress or time wasted",
+  "Professional discounts available",
+  "Convenient home or office locations"
 ];
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="py-24 bg-secondary/30">
+    <section id="why-us" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div>
-            <p className="text-primary font-medium mb-2 tracking-wider uppercase">Why Choose Us</p>
+            <p className="text-primary font-medium mb-2 tracking-wider uppercase">Who We Are</p>
             <h2 className="font-display text-4xl md:text-6xl text-foreground mb-6">
-              BUILT BY RIDERS,{' '}
-              <span className="text-primary">FOR RIDERS</span>
+              CARE BUILT ON{' '}
+              <span className="text-primary">EXPERTISE & COMPASSION</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              We're not just mechanics – we're passionate electric dirtbike riders who understand the unique needs of EV owners. Our shop is equipped with the latest diagnostic tools and our team stays current with evolving EV technology.
+              Dr. Phil Wilkins combines decades of experience in sports medicine, chiropractic care, and advanced neurophysiology training to provide world-class care in your home or office.
             </p>
 
             {/* Benefits List */}

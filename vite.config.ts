@@ -12,8 +12,7 @@ if (fs.existsSync(".env.local")) {
 }
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  return ({
+export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
@@ -23,5 +22,5 @@ export default defineConfig(({ mode }) => {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  });
-});
+  },
+}));

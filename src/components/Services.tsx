@@ -1,50 +1,35 @@
-import { Wrench, Sparkles, CircleDot, SprayCan, Droplet, Settings } from "lucide-react";
+import { Clock, Heart, Zap } from "lucide-react";
 
 const services = [
   {
-    icon: Wrench,
-    title: "Parts Installation",
-    description: "Professional installation of all components and upgrades for your electric dirtbike."
+    icon: Clock,
+    title: "Convenience & Longer Appointments",
+    description: "No waiting rooms. Dedicated time with your doctor in the comfort of your home or office."
   },
   {
-    icon: Sparkles,
-    title: "Metal Polishing",
-    description: "Restore the shine to your bike's metal parts with our expert polishing services."
+    icon: Heart,
+    title: "Personalized & Gentle Treatment",
+    description: "Customized care based on your specific needs, health goals, and comfort preferences."
   },
   {
-    icon: CircleDot,
-    title: "Tires & Tubes",
-    description: "Tire mounting and tube replacement to keep you rolling smoothly on any terrain."
-  },
-  {
-    icon: Droplet,
-    title: "Brake Bleeding",
-    description: "Professional brake bleeding service for any brake system using mineral oil or DOT 4."
-  },
-  {
-    icon: Settings,
-    title: "Drive Train Service",
-    description: "Complete drive train maintenance including chain, sprockets, and belt service."
-  },
-  {
-    icon: SprayCan,
-    title: "Bike Cleaning",
-    description: "Thorough cleaning and detailing to keep your electric dirtbike looking brand new."
+    icon: Zap,
+    title: "Exercise Prescription & Prevention",
+    description: "Get exercises and preventative care strategies to support your recovery and wellness."
   }
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 tracking-wider uppercase">What We Do</p>
+          <p className="text-primary font-medium mb-2 tracking-wider uppercase">Why Choose Us</p>
           <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
-            OUR SERVICES
+            ADAPTIVE CARE DESIGNED FOR YOU
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From routine maintenance to complex repairs, we've got your electric dirtbike covered.
+            Experience chiropractic care that adapts to your lifestyle, not the other way around.
           </p>
         </div>
 
