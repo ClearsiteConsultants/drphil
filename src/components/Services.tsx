@@ -1,4 +1,4 @@
-import { Wrench, Sparkles, CircleDot, SprayCan } from "lucide-react";
+import { Wrench, Sparkles, CircleDot, SprayCan, Droplet, Settings } from "lucide-react";
 
 const services = [
   {
@@ -14,7 +14,17 @@ const services = [
   {
     icon: CircleDot,
     title: "Tires & Tubes",
-    description: "Tire mounting, tube replacement, and balancing to keep you rolling smoothly on any terrain."
+    description: "Tire mounting and tube replacement to keep you rolling smoothly on any terrain."
+  },
+  {
+    icon: Droplet,
+    title: "Brake Bleeding",
+    description: "Professional brake bleeding service for any brake system using mineral oil or DOT 4."
+  },
+  {
+    icon: Settings,
+    title: "Drive Train Service",
+    description: "Complete drive train maintenance including chain, sprockets, and belt service."
   },
   {
     icon: SprayCan,

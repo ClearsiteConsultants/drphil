@@ -30,9 +30,11 @@ const Header = () => {
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               Contact
             </a>
-            <Button variant="outline" size="sm">
-              Book Now
-            </Button>
+            <a href="#contact">
+              <Button variant="outline" size="sm">
+                Book Now
+              </Button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -56,9 +58,11 @@ const Header = () => {
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
               Contact
             </a>
-            <Button variant="outline" className="w-full mt-2">
-              Book Now
-            </Button>
+            <a href="#contact" className="w-full mt-2">
+              <Button variant="outline" className="w-full">
+                Book Now
+              </Button>
+            </a>
           </nav>
         )}
       </div>
