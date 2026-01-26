@@ -17,6 +17,14 @@ export default async function handler(
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
+    // Check if API key exists
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not set in environment');
+      return res.status(500).json({ error: 'API key not configured' });
+    }
+
+    console.log('Sending email with API key:', process.env.RESEND_API_KEY?.substring(0, 10) + '...');
+
     // Send email using Resend
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -41,9 +49,16 @@ export default async function handler(
 
     if (!response.ok) {
       const error = await response.json();
+      console.error('Resend API Error:', {
+        status: response.status,
+        statusText: response.statusText,
+        apiError: error,
+      });
       throw new Error(error.message || 'Failed to send email');
     }
 
+    const result = await response.json();
+    console.log('Email sent successfully:', result);
     return res.status(200).json({ success: true, message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
