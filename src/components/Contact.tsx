@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "(555) 123-4567"
+    value: "(801) 514-6485"
   },
   {
     icon: Mail,
