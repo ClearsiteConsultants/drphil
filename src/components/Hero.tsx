@@ -9,7 +9,7 @@ const Hero = ({ heroImage }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center gradient-hero overflow-hidden pt-20">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-end justify-end pr-12 pb-20">
         <img 
           src={heroImage} 
           alt="E-Moto Repair" 
@@ -44,18 +44,16 @@ const Hero = ({ heroImage }: HeroProps) => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Expert repairs and maintenance for electric dirtbikes. Fast turnaround, honest pricing, and certified technicians who understand EV technology.
+            Expert repairs and maintenance for electric dirtbikes. Fast turnaround, honest pricing, and experienced technicians who understand EV technology.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Button variant="hero">
-              Get a Quote
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline">
-              Our Services
-            </Button>
+            <a href="#services">
+              <Button variant="heroOutline">
+                Our Services
+              </Button>
+            </a>
           </div>
 
           {/* Stats */}
@@ -65,8 +63,8 @@ const Hero = ({ heroImage }: HeroProps) => {
               <p className="text-sm text-muted-foreground mt-1">Bikes Repaired</p>
             </div>
             <div>
-              <p className="font-display text-4xl md:text-5xl text-primary text-glow">24h</p>
-              <p className="text-sm text-muted-foreground mt-1">Avg Turnaround</p>
+              <p className="font-display text-4xl md:text-5xl text-primary text-glow">2-6</p>
+              <p className="text-sm text-muted-foreground mt-1">Days Turnaround</p>
             </div>
             <div>
               <p className="font-display text-4xl md:text-5xl text-primary text-glow">100%</p>

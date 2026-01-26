@@ -1,15 +1,15 @@
-import { CheckCircle, Clock, Award, Users } from "lucide-react";
+import { CheckCircle, Clock, Award, Users, DollarSign } from "lucide-react";
 
 const features = [
   {
-    icon: Award,
-    title: "EV Certified",
-    description: "Our technicians are specifically trained in electric vehicle systems and high-voltage safety."
-  },
-  {
     icon: Clock,
     title: "Fast Turnaround",
-    description: "Most repairs completed within 24-48 hours. We know you want to get back on the trail."
+    description: "Most repairs completed within 2-6 days. We know you want to get back on the trail."
+  },
+  {
+    icon: DollarSign,
+    title: "Best Value",
+    description: "Very inexpensive rates and we find the best deals on parts to save you money."
   },
   {
     icon: Users,
@@ -21,10 +21,9 @@ const features = [
 const benefits = [
   "Transparent pricing with no hidden fees",
   "Free diagnostics on all repairs",
-  "90-day warranty on all work",
+  "30-day guaranteed refund on all services",
   "Genuine OEM and quality aftermarket parts",
-  "Pickup and delivery available",
-  "Loaner bikes for extended repairs"
+  "Pickup service available"
 ];
 
 const WhyUs = () => {
