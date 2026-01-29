@@ -1743,8 +1743,8 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 0.5,
-      "status": "not-started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [
         "F009"
       ],
@@ -1752,25 +1752,25 @@
         {
           "id": "AC024-1",
           "description": "Discount rates box has same background styling as pricing cards",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC024-2",
           "description": "Text in discount section is clearly readable with proper contrast",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC024-3",
           "description": "Visual consistency between pricing cards and discount section",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC024-4",
           "description": "Meets WCAG AA color contrast requirements (4.5:1 for text)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1779,13 +1779,13 @@
           "id": "T024-1",
           "type": "visual",
           "description": "Verify discount section matches pricing card styling",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T024-2",
           "type": "automated",
           "description": "Check color contrast ratio with accessibility tools",
-          "passes": false
+          "passes": true
         }
       ]
     },
