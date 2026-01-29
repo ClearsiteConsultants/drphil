@@ -20,12 +20,12 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-slate-50">
+    <section id="services" className="py-24 bg-slate-50" aria-labelledby="services-heading">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2 tracking-wider uppercase">Why Choose Us</p>
-          <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
+          <h2 id="services-heading" className="font-display text-4xl md:text-6xl text-foreground mb-4">
             ADAPTIVE CARE DESIGNED FOR YOU
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

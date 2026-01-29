@@ -3,12 +3,12 @@ import { IMAGES } from "@/constants/images";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-slate-900 text-white border-t border-slate-800">
+    <footer className="py-12 bg-slate-900 text-white border-t border-slate-800" role="contentinfo">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div>
-            <a href="/" className="flex items-center group mb-4">
+            <a href="/" className="flex items-center group mb-4" aria-label="Dr. Phil Mobile Chiropractic Home">
               <img 
                 src={IMAGES.logoWhite.src} 
                 alt={IMAGES.logoWhite.alt}
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-2" aria-label="Footer navigation">
             <h3 className="font-heading text-sm text-white mb-2">Quick Links</h3>
             <a href="/" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
               Home

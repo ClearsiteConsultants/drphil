@@ -22,11 +22,13 @@ const About = () => {
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `url(${IMAGES.doctorPhoto1})` }}
+        role="img"
+        aria-label="Dr. Phil Wilkins providing professional chiropractic care"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl text-white">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">About</h1>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">About Dr. Phil Wilkins</h1>
             <div className="space-y-4 text-lg leading-relaxed">
               <p>I have always loved being active and participated in sports throughout my life.</p>
               <p>My journey in healthcare began when I severely injured my ankle and had to have surgery to repair ligament and tendon damage. Starting rehab for my ankle I knew I wanted to help people overcome their injuries and become healthier.</p>

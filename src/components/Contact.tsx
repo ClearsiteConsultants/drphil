@@ -76,12 +76,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50">
+    <section id="contact" className="py-24 bg-slate-50" aria-labelledby="contact-heading">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2 tracking-wider uppercase">Schedule Your Care</p>
-          <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
+          <h2 id="contact-heading" className="font-display text-4xl md:text-6xl text-foreground mb-4">
             GET IN TOUCH
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -96,21 +96,22 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-muted-foreground mb-2">Name</label>
-                  <Input name="name" placeholder="Your name" className="bg-background/50" required />
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-muted-foreground mb-2">Name *</label>
+                  <Input id="contact-name" name="name" placeholder="Your name" className="bg-background/50" required />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-muted-foreground mb-2">Email</label>
-                  <Input name="email" type="email" placeholder="your@email.com" className="bg-background/50" required />
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-muted-foreground mb-2">Email *</label>
+                  <Input id="contact-email" name="email" type="email" placeholder="your@email.com" className="bg-background/50" required />
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-muted-foreground mb-2">Phone</label>
-                <Input name="phone" type="tel" placeholder="(555) 000-0000" className="bg-background/50" />
+                <label htmlFor="contact-phone" className="block text-sm font-medium text-muted-foreground mb-2">Phone</label>
+                <Input id="contact-phone" name="phone" type="tel" placeholder="(555) 000-0000" className="bg-background/50" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-muted-foreground mb-2">Message</label>
+                <label htmlFor="contact-message" className="block text-sm font-medium text-muted-foreground mb-2">Message *</label>
                 <Textarea 
+                  id="contact-message"
                   name="message"
                   placeholder="Tell us about your health goals or questions..."
                   rows={4}

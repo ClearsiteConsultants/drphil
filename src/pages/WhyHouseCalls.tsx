@@ -12,17 +12,19 @@ const WhyHouseCalls = () => {
       <div 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `url(${doctorPhoto1})` }}
+        role="img"
+        aria-label="Chiropractic treatment background"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-heading text-white mb-4">
-            Why House Calls
+            Why House Calls?
           </h1>
         </div>
       </div>
 
       {/* Content Section */}
-      <main className="flex-grow py-16 md:py-24">
+      <main className="flex-grow py-16 md:py-24" id="main-content">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="space-y-6 text-lg leading-relaxed">
             <p>
