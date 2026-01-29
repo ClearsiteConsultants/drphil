@@ -2,10 +2,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import doctorPhoto1 from "@/assets/images/doctor-photo-1.jpg";
+import SEO from "@/components/SEO";
 
 const WhyHouseCalls = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Why House Calls? - Convenient Mobile Chiropractic Care"
+        description="Experience convenient mobile chiropractic care in the comfort of your home or office. No waiting rooms, no traffic - just quality personalized treatment delivered directly to you in Utah."
+      />
       <Header />
       
       {/* Hero Section with Background Image */}

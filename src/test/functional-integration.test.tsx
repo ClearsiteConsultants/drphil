@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent, within } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
@@ -63,9 +64,11 @@ describe('Functional Integration Testing - F018', () => {
   describe('AC018-2: All Free Consultation buttons open JaneApp in new tab', () => {
     it('T018-2: About page Free Consultation button links to JaneApp', () => {
       render(
-        <BrowserRouter>
-          <About />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <About />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       const consultButton = screen.getByText('Free Consultation');
@@ -77,9 +80,11 @@ describe('Functional Integration Testing - F018', () => {
 
     it('T018-3: Why House Calls page Free Consultation button links to JaneApp', () => {
       render(
-        <BrowserRouter>
-          <WhyHouseCalls />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <WhyHouseCalls />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       const consultButton = screen.getByText('Free Consultation');
@@ -200,9 +205,11 @@ describe('Functional Integration Testing - F018', () => {
 
     it('T018-6: About page doctor photos carousel renders with navigation', () => {
       render(
-        <BrowserRouter>
-          <About />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <About />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       // Check that images are present
@@ -281,9 +288,11 @@ describe('Functional Integration Testing - F018', () => {
 
     it('All JaneApp booking links are consistent', () => {
       const { rerender } = render(
-        <BrowserRouter>
-          <Header />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <Header />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       let janeAppLinks = screen.getAllByRole('link', { name: /Schedule Now/i });
@@ -292,9 +301,11 @@ describe('Functional Integration Testing - F018', () => {
       });
 
       rerender(
-        <BrowserRouter>
-          <Footer />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <Footer />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       janeAppLinks = screen.getAllByRole('link', { name: /Schedule Now/i });
@@ -303,9 +314,11 @@ describe('Functional Integration Testing - F018', () => {
       });
 
       rerender(
-        <BrowserRouter>
-          <About />
-        </BrowserRouter>
+        <HelmetProvider>
+          <BrowserRouter>
+            <About />
+          </BrowserRouter>
+        </HelmetProvider>
       );
 
       const consultLink = screen.getByRole('link', { name: /Free Consultation/i });

@@ -853,3 +853,66 @@ PERFORMANCE METRICS:
 - Lazy loading images: ✅ All non-critical images
 - Lazy loading routes: ✅ All pages
 - Bundle size (gzipped): ✅ ~145 KB (< 500KB target)
+
+## Task F014: SEO & Meta Tags - Completed 2026-01-29
+
+### What was implemented:
+1. Installed react-helmet-async package for managing document head tags
+2. Created comprehensive SEO component (src/components/SEO.tsx) with:
+   - Dynamic title and description per page
+   - Open Graph tags (og:title, og:description, og:image, og:url, og:type)
+   - Twitter Card tags (summary_large_image format)
+   - Canonical URLs for all pages
+   - Schema.org structured data for LocalBusiness and MedicalBusiness
+   - Physician schema with Dr. Phil Wilkins credentials
+   - Service area coverage (Salt Lake City, Provo, Park City, Ogden, Orem)
+
+3. Updated App.tsx to wrap application with HelmetProvider
+
+4. Added SEO component to all main pages:
+   - Homepage (Index.tsx): "Adaptive Mobile Chiropractic - Dr. Phil Wilkins DC ATC CNIM"
+   - About page: Unique title and description focusing on Dr. Phil's credentials
+   - Why House Calls page: Unique title and description explaining convenience
+
+5. Updated index.html with proper base meta tags
+
+6. Updated test files to support HelmetProvider in test environment
+
+7. Created comprehensive SEO test suite (src/test/seo.test.tsx) with 10 automated tests covering:
+   - Homepage title verification
+   - Meta descriptions with service area cities
+   - Unique titles for About and Why House Calls pages
+   - Open Graph tags on all pages
+   - Twitter Card tags
+   - Canonical URLs
+   - Schema.org structured data validation
+
+### All acceptance criteria met:
+ AC014-1: Homepage title includes full credentials
+ AC014-2: Homepage description includes key services and cities
+ AC014-3: About page has unique SEO metadata
+ AC014-4: Why House Calls page has unique SEO metadata
+ AC014-5: Open Graph tags present on all pages
+ AC014-6: Twitter Card tags configured
+ AC014-7: Canonical URLs set for all pages
+ AC014-8: robots.txt already properly configured
+ AC014-9: Schema.org structured data for LocalBusiness and MedicalBusiness
+
+### Tests status:
+- All 36 tests passing (including 10 new SEO tests)
+- TypeScript compilation successful
+- No accessibility violations
+
+### Files modified:
+- package.json (added react-helmet-async)
+- src/App.tsx (added HelmetProvider)
+- src/pages/Index.tsx (added SEO component)
+- src/pages/About.tsx (added SEO component)
+- src/pages/WhyHouseCalls.tsx (added SEO component)
+- index.html (updated base meta tags)
+- src/test/functional-integration.test.tsx (added HelmetProvider to tests)
+
+### Files created:
+- src/components/SEO.tsx
+- src/test/seo.test.tsx
+

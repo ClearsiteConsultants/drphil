@@ -989,8 +989,8 @@
       "priority": "P3",
       "phase": 7,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F003",
         "F011",
@@ -1001,55 +1001,55 @@
         {
           "id": "AC014-1",
           "description": "Homepage title: 'Adaptive Mobile Chiropractic - Dr. Phil Wilkins DC ATC CNIM'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-2",
           "description": "Homepage meta description includes key services and service area cities",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-3",
           "description": "About page has unique title and description",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-4",
           "description": "Why House Calls page has unique title and description",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-5",
           "description": "Open Graph tags (og:title, og:description, og:image, og:url, og:type) present on all pages",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-6",
           "description": "Twitter Card tags configured",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-7",
           "description": "Canonical URLs set for all pages",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-8",
           "description": "robots.txt file configured properly",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC014-9",
           "description": "Schema.org structured data for LocalBusiness and MedicalBusiness",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1058,25 +1058,25 @@
           "id": "T014-1",
           "type": "automated",
           "description": "Verify all meta tags present in HTML head",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T014-2",
           "type": "tool",
           "description": "Run Facebook Sharing Debugger to verify OG tags",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T014-3",
           "type": "tool",
           "description": "Run Twitter Card Validator",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T014-4",
           "type": "tool",
           "description": "Verify structured data with Google Rich Results Test",
-          "passes": false
+          "passes": true
         }
       ]
     },

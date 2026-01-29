@@ -10,10 +10,15 @@ import Pricing from "@/components/Pricing";
 import WhyUs from "@/components/WhyUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Adaptive Mobile Chiropractic - Dr. Phil Wilkins DC ATC CNIM"
+        description="Professional mobile chiropractic services in Salt Lake City, Provo, Park City, Ogden, and Orem, Utah. Expert chiropractic care, sports medicine, and neurophysiology services delivered to your home or office. Same-day appointments available."
+      />
       <Header />
       <Hero />
       <Features />

@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { IMAGES } from "@/constants/images";
+import SEO from "@/components/SEO";
 
 const About = () => {
   const carouselImages = [
@@ -18,6 +19,10 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Dr. Phil Wilkins DC ATC CNIM - Mobile Chiropractor Utah"
+        description="Meet Dr. Phil Wilkins, a certified chiropractor with 25 years of experience in sports medicine, chiropractic medicine, and neurophysiology. Serving Salt Lake City, Provo, and Park City with mobile chiropractic care."
+      />
       {/* Hero Section with Background */}
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
