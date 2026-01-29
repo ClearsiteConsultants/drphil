@@ -286,8 +286,8 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F001"
       ],
@@ -295,31 +295,31 @@
         {
           "id": "AC005-1",
           "description": "Heading displays: 'Service Area'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC005-2",
           "description": "Service area map image (Screen-Shot-2020-02-05-at-4.16.45-PM.png) displays",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC005-3",
           "description": "All 11 cities listed: Alpine, American Fork, Cedar Hills, Highland, Lehi, Orem, Provo, Pleasant Grove, Lindon, Saratoga Springs, Eagle Mountain",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC005-4",
           "description": "Google Maps link included and functional",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC005-5",
           "description": "Component is responsive on all devices",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -328,19 +328,19 @@
           "id": "T005-1",
           "type": "functional",
           "description": "Click Google Maps link and verify it opens correct location",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T005-2",
           "type": "visual",
           "description": "Verify map image is clear and properly sized",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T005-3",
           "type": "content",
           "description": "Count and verify all 11 cities are listed",
-          "passes": false
+          "passes": true
         }
       ]
     },
