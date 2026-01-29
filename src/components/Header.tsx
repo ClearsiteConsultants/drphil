@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Stethoscope, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { IMAGES } from "@/constants/images";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,13 +11,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center box-glow group-hover:box-glow-intense transition-all duration-300">
-              <Stethoscope className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="font-display text-2xl text-foreground tracking-wide">
-              DR. PHIL <span className="text-primary">CHIRO</span>
-            </span>
+          <a href="/" className="flex items-center group">
+            <img 
+              src={IMAGES.logoSimple.src} 
+              alt={IMAGES.logoSimple.alt}
+              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Navigation */}

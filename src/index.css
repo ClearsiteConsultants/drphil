@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;500;600;700&family=Rubik:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,37 +15,38 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 20%;
 
-    --primary: 86 50% 39%;
+    --primary: 95 46% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 213 69% 20%;
+    --secondary: 210 69% 21%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 12% 65%;
     --muted-foreground: 220 12% 50%;
 
-    --accent: 86 50% 49%;
-    --accent-foreground: 220 13% 20%;
+    --accent: 95 46% 40%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 86 50% 39%;
+    --ring: 95 46% 40%;
 
     --radius: 0.5rem;
 
     /* Custom properties */
-    --font-display: 'Bebas Neue', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    --font-topbar: 'Rubik', sans-serif;
     
-    --glow-primary: 0 0 30px hsl(86 50% 39% / 0.15);
-    --glow-primary-intense: 0 0 60px hsl(86 50% 39% / 0.25);
+    --glow-primary: 0 0 30px hsl(95 46% 40% / 0.15);
+    --glow-primary-intense: 0 0 60px hsl(95 46% 40% / 0.25);
     
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 13% 97%) 100%);
-    --gradient-electric: linear-gradient(90deg, hsl(86 50% 39%) 0%, hsl(86 50% 49%) 100%);
+    --gradient-electric: linear-gradient(90deg, hsl(95 46% 40%) 0%, hsl(95 46% 50%) 100%);
   }
 
   .dark {
@@ -60,12 +61,11 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: var(--font-body);
+    @apply bg-background text-foreground font-body;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
+    @apply font-heading;
     letter-spacing: 0.02em;
   }
 }
