@@ -35,8 +35,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center group">
             <img 
-              src={IMAGES.logoSimple.src} 
-              alt={IMAGES.logoSimple.alt}
+              src={IMAGES.logoWhite.src} 
+              alt={IMAGES.logoWhite.alt}
               className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
               loading="eager"
             />

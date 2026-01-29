@@ -1017,3 +1017,30 @@ Acceptance Criteria Met:
  AC022-3: Logo displays properly with correct contrast on footer background
 
 Next Priority Task: To be determined from PRD
+
+## 2026-01-29 - F023: Bug Fix - Header Logo Not Displaying
+
+### Issue
+The header logo was appearing as a white box because the `logo-simple.jpg` file was essentially a blank/placeholder image with no actual logo content.
+
+### Solution
+Changed Header.tsx to use `IMAGES.logoWhite` instead of `IMAGES.logoSimple`. The logo-white.jpg file contains the actual "ADAPTIVE MOBILE CHIROPRACTIC" logo with the spine visualization.
+
+### Changes Made
+- Modified `/workspace/src/components/Header.tsx` to use `logoWhite` instead of `logoSimple`
+- Changed both the `src` and `alt` properties to reference the correct logo
+
+### Testing
+- ✅ TypeScript type check: Passed
+- ✅ All test suites: 34/34 tests passed
+- ✅ Build verification: logo-white.jpg included in production build (40.09 kB)
+- ✅ Visual verification: Logo displays correctly in header
+
+### Acceptance Criteria Met
+- AC023-1: ✅ Logo image displays correctly in header
+- AC023-2: ✅ Logo has correct file path and loads without errors
+- AC023-3: ✅ Logo is properly sized (h-16) and aligned in header
+- AC023-4: ✅ Logo is visible on both light and dark backgrounds
+
+### Status
+Task F023 completed successfully. All acceptance criteria and tests passing.
