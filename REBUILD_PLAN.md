@@ -1,18 +1,18 @@
 # Dr. Phil Mobile Chiropractic - Website Rebuild Plan
 
-**Date:** January 26, 2026  
-**Template:** Modern React + TypeScript + Tailwind CSS (emoto-repair-hub)  
-**Status:** Planning Phase
+**Date:** January 29, 2026  
+**Framework:** React + TypeScript + Tailwind CSS + shadcn/ui  
+**Status:** Implementation Phase
 
 ---
 
 ## Executive Summary
 
-This plan outlines the complete rebuild of Dr. Phil's mobile chiropractic website using a modern, professional template based on the emoto-repair-hub project. The rebuild leverages modern frameworks (React + TypeScript), styling (Tailwind CSS), and UI components (shadcn/ui) to create a faster, more maintainable, and feature-rich website.
+This plan outlines the complete rebuild of Dr. Phil's mobile chiropractic website. The rebuild leverages modern frameworks (React + TypeScript), styling (Tailwind CSS), and UI components (shadcn/ui) to create a faster, more maintainable, and feature-rich website while preserving all original content and imagery.
 
 ---
 
-## Template Technology Stack
+## Technology Stack
 
 ### Framework & Build Tools
 - **Build Tool:** Vite (fast, modern bundler)
@@ -21,263 +21,325 @@ This plan outlines the complete rebuild of Dr. Phil's mobile chiropractic websit
 - **UI Component Library:** shadcn/ui (Radix UI primitives + Tailwind)
 - **Icons:** lucide-react (modern, clean SVG icons)
 - **Carousel:** Embla Carousel (lightweight, performant)
-- **Forms:** React Hook Form + Zod validation
-- **Data Fetching:** TanStack React Query
-- **Deployment:** Vercel (optimized for Next.js/Vite)
+- **Routing:** React Router DOM
+- **Deployment:** Vercel
 
-### Key Template Features
+### Key Features
 - Full TypeScript type safety
 - Responsive design with Tailwind CSS
 - Component-based architecture
 - Modern animations and transitions
-- CSS-in-JS with Tailwind
 - Hot module replacement (HMR) for development
 - Optimized production builds
 
 ---
 
-## Website Architecture
+## Content Preservation (Verbatim from Original Site)
 
-### Current Template Components
-The emoto-repair-hub template includes these core components:
+### Site Identity
+- **Site Title:** "Adaptive Mobile Chiropractic"
+- **Business Name:** Dr. Phil Wilkins DC ATC CNIM
+- **Phone:** 801-369-3122
+- **Email:** doctorphilchiro@gmail.com
+- **Booking URL:** http://drphilmobilechiro.janeapp.com/
 
-1. **Header** - Navigation bar with logo and menu
-2. **Hero** - Full-screen hero section with background image and CTA
-3. **Services** - 3-column grid of service cards with icons
-4. **WhyUs** - Two-column layout with features and benefits list
-5. **Contact** - Form submission + contact info cards
-6. **Footer** - Footer with navigation and social links
-7. **Carousel** - Embla-powered carousel component (UI primitive)
-8. **UI Components** - Pre-built shadcn/ui components (buttons, inputs, forms, etc.)
+### Social Media
+- **Facebook:** https://www.facebook.com/drphilmobilechiro/
+- **Instagram:** https://www.instagram.com/p/B7l9oGzJkiA/?igshid=10ex6php6xbfy
 
-### Dr. Phil Content Sections Needed
-From scraped HTML analysis:
+### Original Content to Preserve
 
-**Homepage Sections:**
-- [ ] Hero Section (with chiropractic tagline)
-- [ ] 3-Column Features (Convenience, Personalized Care, Exercise Rx)
-- [ ] Service Area Map (with 11 cities listed)
-- [ ] Doctor Profile Section
-- [ ] What to Expect Checklist
-- [ ] Testimonials Carousel (4+ customer testimonials)
-- [ ] Pricing Cards (3-tier pricing structure)
-- [ ] Discounts Section (Educators, Military, Law Enforcement, Firefighters)
-- [ ] CTA Buttons (Schedule Now → JaneApp)
 
-**About Page:**
-- [ ] Doctor Biography (education, certifications, experience)
-- [ ] Photo Carousel (3 professional photos)
-- [ ] Practice Philosophy
-- [ ] Certifications Display (BS Sports Med, ATC, Chiropractic, Neurophysiology)
 
-**Why House Calls Page:**
-- [ ] Value Proposition Content
-- [ ] Advantages vs. Traditional Clinic
-- [ ] Benefits List
-- [ ] Hero Image Background
+#### Homepage Hero Section
+**Main Heading:** "Adaptive Mobile Chiropractic"
+
+**Subheading:** "I come to your home or office so you can get better faster without the hassle"
+
+**CTA Button Text:** "Schedule Now" → Links to: http://drphilmobilechiro.janeapp.com/
+
+#### Mobile Care Section
+**Heading:** "Mobile Care To Your Home Or Office"
+
+**Description:**
+"It is our goal at Adaptive Mobile Chiropractic to make healthcare struggle-free by bringing the treatment to you in the comfort of your home or office. My job as a Chiropractic Physician is to improve the function of your body and spine through specific chiropractic and orthopedic treatments. When your body and spine are correctly functioning the results are less pain, increased range of motion, and an overall increase in health and well-being."
+
+#### Three Feature Boxes
+
+**1. Convenience & Longer Appointment Times**
+- Icon: Hourglass/Clock
+- Text: "Let's be honest, life is busy, real busy. Imagine not having to deal with getting the whole family bundled up and into the car or to take time off of work to fight with traffic, all to find yourself waiting in a lobby for just moments of time with your doctor. Dr. Phil will bring everything professionally necessary to your home, conduct regular treatments and checkups on your family, giving you more time to do the important things you need to do throughout your day. This special convenience of house calls provides you the ability to get better without the hassle."
+
+**2. Personalized & Gentle Treatment**
+- Icon: Fingerprint
+- Text: "We all have stress in our lives. Dr. Phil will work with you and evaluate your health, body and spine to find out how stress is affecting your ability to be the healthiest person you can be. Everyone is different. Every body is different. Your treatment will be adapted to your lifestyle so that it will benefit you the most with the best possible outcomes."
+
+**3. Exercise Prescription**
+- Icon: Running
+- Text: "As treatment progresses, assessments will be performed by Dr. Phil to prescribe specific exercises and stretches based on your individual needs."
+
+#### Service Area
+**Heading:** "Service Area"
+
+**Cities Served (List format):**
+- Alpine
+- American Fork
+- Cedar Hills
+- Highland
+- Lehi
+- Orem
+- Provo
+- Pleasant Grove
+- Lindon
+- Saratoga Springs
+- Eagle Mountain
+
+**Map Image:** Screen-Shot-2020-02-05-at-4.16.45-PM.png
+**Map Link:** https://www.google.com/maps/place/Adaptive+Mobile+Chiropractic/@40.3195104,-112.0409596,10z/data=!4m5!3m4!1s0x0:0x360237e45cd12170!8m2!3d40.339925!4d-111.799947
+
+#### Meet the Doctor Section
+**Heading:** "Meet the Doctor"
+
+**Doctor Name:** "Dr. Phil Wilkins DC ATC CNIM"
+
+**Biography:**
+"I have always loved being active and participated in sports throughout my life. My journey in healthcare began when I severely injured my ankle and had to have surgery to repair ligament and tendon damage. Starting rehab for my ankle I knew I wanted to help people overcome their injuries and become healthier. I found through that experience that I loved the human body and how it worked and had a real knack for it. This led to me earning a Bachelor of Science degree in Sports Medicine, and becoming a certified Athletic Trainer.  After working as a trainer for a while, I decided to further my education by studying Chiropractic Medicine.  I again furthered my understanding of the human body and its working as a Neurophysiologist.  Unlike most other physicians, I have 25 years of experience with sports, chiropractic medicine, and in the operating room.  I understand the role chiropractic has in helping people, but I understand the role of surgery as well, and work with orthopedic and neuro surgeons in helping patients receive the best possible care for their injury. My unique background makes me qualified to help others recover from injury and establish a healthy lifestyle.  I understand that no two injuries are exactly the same, and that every individual requires a treatment designed specifically to their circumstances so that they might feel at their optimal best."
+
+**Professional Photos:** DSC_0040.jpg, DSC_0165.jpg, DSC_0255.jpg (use in carousel)
+
+#### What to Expect Section
+**Heading:** "What to Expect"
+
+**Checklist Items:**
+1. "If this is your first visit, Dr. Phil will arrive at your home or office at the convenient appointment time you choose. A review of your health history, filled out online beforehand, and a thorough examination will be performed. This initial visit will last between 45 minutes to 1 hour and will include your first chiropractic treatment if deemed appropriate."
+
+2. "Once your diagnosis and care plan is established, Dr. Phil will schedule a follow up appointment. Depending on your diagnosis, follow up appointments will generally last 30 minutes."
+
+3. "Dr. Phil is 100% mobile, which means that he will bring everything that he needs to provide you with comprehensive care. Each visit will be personalized to you so you can feel better faster and reach your health goals sooner!"
+
+#### Testimonials Section
+**Heading:** "What People Are Saying About Dr. Phil"
+
+**Testimonial 1 - Melissa M.:**
+"I had tweaked my lower back and could barely walk. It was extremely painful and I couldn't stretch it out on my own. Phil (Dr. Wilkins) was able to adjust my lower back and get me walking again with no pain with only a couple of treatments. I would highly recommend him!"
+
+**Testimonial 2 - Ashlee E.:**
+"I have been going to Phil for years in which he has helped me with knee, neck, and back injuries and pain. He is always thorough and makes sure that he has helped relieve your pain and at the exact area that is being affected before he is done. He never tells you just how many times you need to see him before you're better, but always says, 'I'm here if you're still hurting', which is so different from other chiropractors I've been to. I can't recommend Phil enough."
+
+**Testimonial 3 - Kolt E.:**
+"Dr. Phil has worked miracles for my family several times! I was so impressed that a Chiropractor would come to my house and adjust my back after suffering an injury from playing basketball. He is very professional and takes the time to educate and make sure you are feeling better right away."
+
+**Testimonial 4 - Crystal P:**
+"I would highly recommend Phil for chiropractic needs! He is so knowledgeable with his background in the medical field. He has helped me out so much with my athletic injuries and also my SI joint fusion. Phil is amazing and your guy!!!"
+
+#### Pricing Section
+**Heading:** "Pricing"
+
+**Pricing Tiers:**
+
+**1. Getting Started - $125**
+- Initial Visit & Treatment
+- Typically 45-60 Minutes
+
+**2. Follow Up Treatment - $75**
+- Chiropractic Treatment, Stretching, Massage
+- Typically 30 Minutes
+
+**3. Adjustment Only - $50**
+- Typically 15 Minutes
+
+**Discount Section:**
+"Discount Rates Are Available For:"
+- Educators (with Teacher icon)
+- Military (with Jet icon)
+- Law Enforcement (with Shield icon)
+- Firefighters (with Fire Extinguisher icon)
+- Multiple Family Members Treated At The Same Visit (with Users icon)
+
+**CTA Button:** "Get Started" → Links to: http://drphilmobilechiro.janeapp.com/
+
+---
+
+### About Page Content
+
+**Page Title:** "About"
+
+**Background Image:** Photo-Jan-09-7-42-10-PM-scaled.jpg
+
+**Doctor Biography (Extended):**
+"I have always loved being active and participated in sports throughout my life.
+
+My journey in healthcare began when I severely injured my ankle and had to have surgery to repair ligament and tendon damage. Starting rehab for my ankle I knew I wanted to help people overcome their injuries and become healthier.
+
+I found through that experience that I loved the human body and how it worked and had a real knack for it. This led to me earning a Bachelor of Science degree in Sports Medicine, and becoming a certified Athletic Trainer.  After working as a trainer for a while, I decided to further my education by studying Chiropractic Medicine.
+
+I again furthered my understanding of the human body and its working as a Neurophysiologist.  Unlike most other physicians, I have 25 years of experience with sports, chiropractic medicine, and in the operating room.
+
+I understand the role chiropractic has in helping people, but I understand the role of surgery as well, and work with orthopedic and neuro surgeons in helping patients receive the best possible care for their injury. My unique background makes me qualified to help others recover from injury and establish a healthy lifestyle.
+
+I understand that no two injuries are exactly the same, and that every individual requires a treatment designed specifically to their circumstances so that they might feel at their optimal best."
+
+**Photo Carousel:** 3 professional photos (DSC_0040, DSC_0165, DSC_0255)
+
+**CTA Button:** "Free Consultation" → Links to: http://drphilmobilechiro.janeapp.com/
+
+---
+
+### Why House Calls Page Content
+
+**Page Title:** "Why House Calls"
+
+**Background Image:** DSC_0019-scaled.jpg
+
+**Content (3 Paragraphs):**
+
+**Paragraph 1:**
+"If you are looking for a level of convenience that you've never experienced, then House Calls is your answer. As a House Call Chiropractic Physician, I come to you. This means that you continue relaxing in the comfort of your own home or office while receiving quality care. There is no need to be inconvenienced by packing up the family, taking time off of work, driving and dealing with traffic, and sitting in waiting rooms. Why waste your precious valuable time when you could be doing the things you'd rather be doing?"
+
+**Paragraph 2:**
+"In a conventional office setting, it's not uncommon or unusual to sit in a waiting room for 20+ minutes, finally to be escorted to a treatment room where you once again wait for the doctor, who then ends up spending 5 minutes with you. You will receive more services and your care will be personalized to you so you can feel better faster. Dr. Phil is able to assess you on a deeper level in your home, so instead of treating your symptoms, He treats you as a whole."
+
+**Paragraph 3:**
+"Most people don't have time to go to the doctor and appointment times are difficult to manage. That's why House Calls are the solution. Let Chiropractic treatment come to you so you can feel better faster without the hassle."
+
+**CTA Button:** "Free Consultation" → Links to: http://drphilmobilechiro.janeapp.com/
 
 ---
 
 ## Implementation Plan - Phase Breakdown
 
-### Phase 1: Project Setup & Configuration ✅ (Template Ready)
-**Status:** Complete - template already copied to workspace
+### Phase 1: Project Setup & Assets ✅
+**Status:** Complete
 
-**Completed Items:**
-- [x] Copy emoto-template to drphil project
-- [x] Verify Vite configuration
-- [x] Verify Tailwind CSS setup
-- [x] Verify TypeScript configuration
-- [x] Verify component structure
+**Completed:**
+- [x] Project initialized with Vite + React + TypeScript
+- [x] Tailwind CSS configured
+- [x] shadcn/ui components installed
+- [x] React Router DOM installed
+- [x] Embla Carousel available
 
-**Dependencies Already Installed:**
-- React 18+
-- TypeScript
-- Tailwind CSS
-- Embla Carousel
-- shadcn/ui components
-- Lucide icons
-- React Hook Form
-- TanStack React Query
+**Assets To Add:**
+- [ ] Extract and rename images from scraped/images/full/:
+  - logo_simple.png (header logo)
+  - logo_white.png (footer logo)
+  - Screen-Shot-2020-02-05-at-4.16.45-PM.png (service area map)
+  - DSC_0040.jpg, DSC_0165.jpg, DSC_0255.jpg (doctor photos)
+  - Photo-Jan-09-7-42-10-PM-scaled.jpg (About page background)
+  - DSC_0019-scaled.jpg (Why House Calls page background)
+- [ ] Add images to src/assets/ directory
+- [ ] Create favicon from logo
 
-### Phase 2: Branding & Customization
-**Timeline:** 2-3 hours
+### Phase 2: Branding & Styling
+**Timeline:** 1-2 hours
 
 **Tasks:**
-1. **Color Theme Update**
-   - Primary Color: #6c9932 (Green - Dr. Phil branding)
-   - Secondary Color: #10315a (Navy)
+1. **Color Theme (From Original Site)**
+   - Primary Color: #6c9932 (Green - from original site)
+   - Secondary Color: #10315a (Navy - from original site)
    - Accent Colors: White borders on buttons
    - Update tailwind.config.ts CSS variables
-   - Replace template's electric-blue theme with chiropractic green
 
-2. **Typography Customization**
-   - Keep Bebas Neue for display (headings) - professional feel
-   - Keep Inter for body text - clean, readable
-   - Adjust font sizes if needed for medical/professional context
+2. **Typography (From Original Site)**
+   - Display Font: Poppins (headings)
+   - Body Font: Lato
+   - Accent Font: Rubik (top bar, footer)
+   - Keep responsive font sizing from original
 
 3. **Logo & Branding**
-   - Replace template bike images with Dr. Phil logo assets
-   - Add logo variants (logo_simple.png, logo_white.png)
+   - Add logo_simple.png for header
+   - Add logo_white.png for footer
    - Create favicon from logo
 
-4. **Remove Template Assets**
-   - Delete hero-bike.png and other emoto assets
-   - Delete emoto-specific images from /public folder
-   - Add Dr. Phil images (DSC_0040, DSC_0165, DSC_0255, map screenshot)
+4. **Background Images**
+   - Hero section: Use original background from scraped site
+   - About page: Photo-Jan-09-7-42-10-PM-scaled.jpg
+   - Why House Calls page: DSC_0019-scaled.jpg
 
-### Phase 3: Homepage Rebuild
-**Timeline:** 4-5 hours
+### Phase 3: Homepage Components
+**Timeline:** 3-4 hours
 
-**Component Modifications:**
+**Components to Build:**
 
-#### 3.1 Hero Section Component
-- **Current:** "WE KEEP YOUR ELECTRIC RIDE RUNNING"
-- **New:** "Adaptive Mobile Chiropractic" or "Mobile Care To Your Home Or Office"
-- **Change:** Update headline, subheadline, CTA button text
-- **Image:** Replace bike image with chiropractic/wellness image
-- **Stats:** Change from "500+ Bikes Repaired" to relevant Dr. Phil stats
-  - Option: "1000+ Patients Served" or similar
-  - "Same-Day Appointments Available"
-  - "15+ Years Experience"
+#### 3.1 Hero Section
+- **Main Heading:** "Adaptive Mobile Chiropractic"
+- **Subheading:** "I come to your home or office so you can get better faster without the hassle"
+- **CTA Button:** "Schedule Now" → http://drphilmobilechiro.janeapp.com/
+- **Background:** Use original hero background image
+- **File:** `src/components/Hero.tsx`
 
-**File to modify:** `src/components/Hero.tsx`
+#### 3.2 Features Section (3 Feature Boxes)
+Use verbatim text from Content Preservation section
+- **Icons:** Clock/Hourglass, Fingerprint, Running
+- **File:** `src/components/Features.tsx`
 
-#### 3.2 Features Section (3-Column Grid)
-- **Current:** Parts Installation, Metal Polishing, Tires & Tubes, etc.
-- **New:** Adapt to show Dr. Phil's value propositions
+#### 3.3 Mobile Care Introduction
+- **Heading:** "Mobile Care To Your Home Or Office"
+- **Description:** Use verbatim paragraph from Content Preservation section
+- **File:** Can be part of Hero or separate component
 
-**New Feature Cards:**
-1. **Convenience & Longer Appointments**
-   - Icon: Clock/Hourglass
-   - Description: "No waiting room. Dedicated time with your doctor."
-
-2. **Personalized & Gentle Treatment**
-   - Icon: Fingerprint or Heart
-   - Description: "Customized care based on your specific needs and health goals."
-
-3. **Exercise Prescription & Prevention**
-   - Icon: Running/Activity
-   - Description: "Get exercises and preventative care to support your recovery."
-
-**File to modify:** `src/components/Services.tsx`
-
-#### 3.3 Create New Components
-
-##### ServiceAreaMap Component
+#### 3.4 ServiceAreaMap Component
 ```tsx
 // Location: src/components/ServiceAreaMap.tsx
 // Display:
-// - Map image (static)
-// - List of 11 service cities:
-//   Alpine, American Fork, Cedar Hills, Highland, Lehi,
-//   Orem, Provo, Pleasant Grove, Lindon, Saratoga Springs,
-//   Eagle Mountain
-// - Optional: Upgrade to Google Maps API (interactive)
+// - Heading: "Service Area"
+// - Map image: Screen-Shot-2020-02-05-at-4.16.45-PM.png
+// - List of 11 cities (use verbatim list from Content Preservation)
+// - Link to Google Maps for directions
 ```
 
-**Decision Point:** Static Image vs. Google Maps
-- **Static Image:** Fast, no API key needed, same as current
-- **Google Maps:** Interactive, users can get directions, modern look
-- **Recommendation:** Implement Google Maps with fallback to static image
-
-##### DoctorProfile Component
+#### 3.5 DoctorProfile Component
 ```tsx
 // Location: src/components/DoctorProfile.tsx
 // Content:
-// - Doctor name: Dr. Phil Wilkins
-// - Credentials: DC, ATC, CNIM
-// - Photo carousel (3 professional photos)
-// - Short bio excerpt
-// - Certifications list
-// - Call to action: "Free Consultation"
+// - Heading: "Meet the Doctor"
+// - Doctor name: Dr. Phil Wilkins DC ATC CNIM
+// - Use verbatim biography from Content Preservation section
+// - Display beside doctor photo (responsive layout)
 ```
 
-##### WhatsToExpect Component
+#### 3.6 WhatsToExpect Component
 ```tsx
 // Location: src/components/WhatsToExpect.tsx
 // Content:
-// - 3-4 numbered checklist items describing patient experience
-// - From scraped content, adapt to chiropractic context
-// - Icons for each step
-// - Estimated time for each step
+// - Heading: "What to Expect"
+// - 3 checklist items with check icons
+// - Use verbatim text from Content Preservation section
 ```
 
-##### Testimonials Component (Carousel)
+#### 3.7 Testimonials Component (Carousel)
 ```tsx
 // Location: src/components/Testimonials.tsx
-// Uses: Embla Carousel (already available)
+// Uses: Embla Carousel (shadcn/ui)
 // Content:
-// - 4+ customer testimonials with names
-// - Star ratings (if available)
-// - Photos (if available)
+// - Heading: "What People Are Saying About Dr. Phil"
+// - 4 testimonials with names (use verbatim from Content Preservation)
 // - Auto-play carousel with navigation arrows
-// - Responsive: 1 slide mobile, 2-3 slides desktop
-// 
-// Testimonial Data:
-// 1. Melissa M. - [testimonial text]
-// 2. Ashlee E. - [testimonial text]
-// 3. Kolt E. - [testimonial text]
-// 4. Crystal P. - [testimonial text]
+// - Responsive: 1 slide mobile, 2-3 desktop
+// - Carousel navigation dots
 ```
 
-**Carousel Implementation Details:**
-- Import Embla Carousel hook from template
-- Use carousel.tsx UI component from shadcn/ui
-- Configure auto-play with autoplay plugin
-- Add manual navigation arrows
-- Add dot indicators (optional)
-
-##### Pricing Component
+#### 3.8 Pricing Component
 ```tsx
 // Location: src/components/Pricing.tsx
-// Layout: 3-column card grid
-// Pricing Tiers:
-// 1. Getting Started: $125 (initial visit, 45-60 min)
-// 2. Follow Up Treatment: $75 (30 min)
-// 3. Adjustment Only: $50 (15 min)
-// 
-// Additional Section:
-// - Discount callout for:
-//   • Educators
-//   • Military
-//   • Law Enforcement
-//   • Firefighters
-//   • Multiple Family Members
-// - "Contact for discount details" CTA
+// Layout: 3-column pricing cards + discount section
+// Content:
+// - Heading: "Pricing"
+// - Use verbatim pricing from Content Preservation section
+// - Discount section with icons
+// - CTA Button: "Get Started" → JaneApp URL
 ```
 
-#### 3.4 Update WhyUs Component
-- **Current:** "Built by Riders, For Riders"
-- **Adapt to:** "Built for Your Health, By a Caring Professional"
-- Replace feature icons to match healthcare context
-- Update benefits list for chiropractic care
-
-**File to modify:** `src/components/WhyUs.tsx`
-
-#### 3.5 Update Contact Component
-- **Current contact info:** emoto-repair details
-- **New contact info:**
-  - Phone: 801-369-3122
-  - Email: doctorphilchiro@gmail.com
-  - Address: Eagle Mountain, UT (from service area)
-  - Hours: [Need from current site]
-- **Form fields:**
-  - Name
-  - Email
-  - Phone
-  - Preferred Appointment Time (optional)
-  - Message
-- **CTA:** "Schedule Free Consultation" → Link to JaneApp scheduling
-
-**File to modify:** `src/components/Contact.tsx`
-
-#### 3.6 Create Testimonials Carousel Example
+#### 3.9 Contact Information Footer Section
 ```tsx
-// src/components/Testimonials.tsx
-// Uses Embla Carousel with auto-play
-// Displays testimonials in rotating carousel
-// Shows 1 at a time on mobile, 2-3 on desktop
+// Location: src/components/Footer.tsx
+// Content:
+// - Contact information display (no form)
+// - Phone: 801-369-3122 (clickable tel: link)
+// - Email: doctorphilchiro@gmail.com (clickable mailto: link)
+// - Social media links (Facebook, Instagram)
+// - Navigation links
+// - CTA Button: "Schedule Now" → JaneApp URL
+// NOTE: No contact form - all scheduling through JaneApp
 ```
 
 ### Phase 4: Supporting Pages
@@ -286,215 +348,124 @@ From scraped HTML analysis:
 #### 4.1 About Page
 ```
 src/pages/About.tsx
-├── Header/Hero Section
-├── Full Doctor Biography
-│   ├── Education
-│   ├── Certifications
-│   ├── Experience
-│   └── Practice Philosophy
-├── Photo Carousel (3 professional photos)
+├── Page Header with background image
+├── Doctor Biography (use verbatim from Content Preservation)
+├── Photo Carousel (3 professional photos: DSC_0040, DSC_0165, DSC_0255)
 │   └── Uses Embla Carousel
-├── Certifications Display
-└── CTA: "Free Consultation"
+└── CTA: "Free Consultation" → JaneApp URL
 ```
 
-**Component to create:** `src/components/DoctorBio.tsx`
-- Display bio content
-- Optional sidebar with quick facts
-- Professional layout with readability focus
+**Background Image:** Photo-Jan-09-7-42-10-PM-scaled.jpg
 
 #### 4.2 Why House Calls Page
 ```
 src/pages/WhyHouseCalls.tsx
-├── Hero with background image
-├── Main value proposition content
-├── 3-4 benefit blocks:
-│   ├── Avoid waiting room stress
-│   ├── More comfortable at home
-│   ├── Longer appointment times
-│   └── Personalized environment
-├── Comparison chart (optional)
-└── CTA: "Free Consultation"
+├── Page Header with background image
+├── 3 paragraphs (use verbatim from Content Preservation)
+└── CTA: "Free Consultation" → JaneApp URL
 ```
 
-**Component to create:** `src/components/BenefitsGrid.tsx`
+**Background Image:** DSC_0019-scaled.jpg
 
-### Phase 5: Google Maps Integration
-**Timeline:** 1-2 hours
-
-**Tasks:**
-1. **Get Google Maps API Key**
-   - Create/configure in Google Cloud Console
-   - Add to environment variables (.env.local)
-
-2. **Create MapComponent**
-   ```tsx
-   // src/components/Map.tsx
-   // Uses: @react-google-maps/api library
-   // Display: Interactive map showing service area
-   // Markers: Eagle Mountain location or service area boundaries
-   // Fallback: Static image if API unavailable
-   ```
-
-3. **Update ServiceAreaMap**
-   - Replace static image with interactive Google Map
-   - Show service cities as markers or highlighted region
-   - Embed map in dedicated section on homepage
-
-4. **Install Map Library**
-   ```bash
-   npm install @react-google-maps/api
-   ```
-
-### Phase 6: Image Assets & Optimization
-**Timeline:** 1-2 hours
+### Phase 5: Image Assets & Optimization
+**Timeline:** 1 hour
 
 **Tasks:**
-1. **Extract Images from Scraped Content**
-   - Professional photos (DSC_0040, DSC_0165, DSC_0255)
-   - Service area map screenshot
-   - Logo variants (logo_simple.png, logo_white.png)
+1. **Extract & Rename Images**
+   - Identify hash-named images in scraped/images/full/
+   - Rename to original filenames:
+     - logo_simple.png
+     - logo_white.png
+     - Screen-Shot-2020-02-05-at-4.16.45-PM.png (service area map)
+     - DSC_0040.jpg, DSC_0165.jpg, DSC_0255.jpg (doctor photos)
+     - Photo-Jan-09-7-42-10-PM-scaled.jpg (About background)
+     - DSC_0019-scaled.jpg (Why House Calls background)
 
 2. **Organize in Project**
    ```
-   src/assets/
+   src/assets/images/
    ├── logo-simple.png
    ├── logo-white.png
+   ├── service-area-map.png
    ├── doctor-photo-1.jpg
    ├── doctor-photo-2.jpg
    ├── doctor-photo-3.jpg
-   ├── service-area-map.png
-   └── [any other images needed]
+   ├── about-bg.jpg
+   └── why-house-calls-bg.jpg
    ```
 
 3. **Image Optimization**
-   - Resize photos to optimal dimensions
-   - Compress for web (tinypng, imageoptim)
-   - Create responsive variants if needed
+   - Images already optimized for web from original site
+   - Verify responsive loading
    - Add alt text to all images
 
 4. **Favicon**
-   - Create from Dr. Phil logo
-   - Add to /public folder
+   - Create from logo_simple.png
+   - Add to public/ directory
 
-### Phase 7: Content Migration & Data Structure
-**Timeline:** 1-2 hours
-
-**Tasks:**
-1. **Extract Text Content**
-   - Copy all text from scraped HTML files
-   - Organize into content files (optional: create data/content.ts)
-   - Format testimonials with names, text, dates
-
-2. **Create Data Files** (Optional - for easier updates)
-   ```typescript
-   // src/data/services.ts
-   // src/data/testimonials.ts
-   // src/data/pricing.ts
-   // src/data/team.ts
-   // src/data/contact.ts
-   ```
-
-3. **Convert to Component Props**
-   - Pass data to components via props
-   - Easier to update content without code changes
-
-### Phase 8: Routing & Navigation
+### Phase 6: Routing & Navigation
 **Timeline:** 1 hour
 
-**Setup React Router:**
-1. Install React Router
-   ```bash
-   npm install react-router-dom
-   ```
+**Routes:**
+```typescript
+// src/App.tsx
+Routes:
+├── / (Homepage)
+├── /about (About Dr. Phil)
+├── /why-house-calls (Why House Calls)
+└── /404 (Not Found)
+```
 
-2. Create routing structure
-   ```typescript
-   // src/App.tsx
-   Routes:
-   ├── / (Homepage)
-   ├── /about (About Dr. Phil)
-   ├── /why-house-calls (Why House Calls)
-   └── /404 (Not Found)
-   ```
+**Tasks:**
+1. Configure React Router
+2. Update Header Navigation with active states
+3. Ensure mobile menu functionality
+4. Test navigation between all pages
 
-3. Update Header Navigation
-   - Links to all pages
-   - Active state indicators
-   - Mobile menu support
-
-4. Ensure navigation consistency across all pages
-
-### Phase 9: SEO & Meta Tags
-**Timeline:** 1-2 hours
+### Phase 7: SEO & Meta Tags
+**Timeline:** 1 hour
 
 **Tasks:**
 1. **Update HTML Meta Tags**
-   - Title: "Dr. Phil Mobile Chiropractic | House Call Chiropractor in Utah"
-   - Description: "Adaptive mobile chiropractic services for your home or office in Utah. Expert care, convenient appointments."
-   - OG tags for social sharing
+   - Title: "Adaptive Mobile Chiropractic - Dr. Phil Wilkins DC ATC CNIM"
+   - Description: "Mobile chiropractic care to your home or office in Utah. Experience personalized treatment without the hassle. Serving Alpine, American Fork, Cedar Hills, Highland, Lehi, Orem, Provo, and more."
+   - Keywords: mobile chiropractor, house call chiropractic, Utah chiropractor
 
 2. **Page-Specific Meta Tags**
-   - About page
-   - Why House Calls page
+   - About: "Dr. Phil Wilkins - 25 Years Experience in Chiropractic Medicine"
+   - Why House Calls: "Convenient Mobile Chiropractic Care - No Waiting Rooms"
 
-3. **Structured Data** (Optional)
-   - Schema.org markup for business
-   - Medical professional schema
+3. **Open Graph Tags**
+   - og:title, og:description
+   - og:image (use logo or doctor photo)
+   - og:url
+   - og:type: "website"
 
-4. **Open Graph Tags**
-   - og:title, og:description, og:image
-   - og:url, og:type
-
-### Phase 10: Accessibility & Performance
-**Timeline:** 1-2 hours
+### Phase 8: Accessibility & Performance
+**Timeline:** 1 hour
 
 **Tasks:**
-1. **Accessibility Audit**
+1. **Accessibility**
    - ARIA labels on interactive elements
    - Keyboard navigation support
-   - Color contrast verification
    - Alt text on all images
+   - Color contrast verification
 
-2. **Performance Optimization**
+2. **Performance**
    - Image lazy loading
    - Code splitting for pages
-   - Bundle analysis
-   - Cache strategy
+   - Lighthouse audit
 
-3. **Mobile Responsiveness Testing**
-   - All breakpoints (mobile, tablet, desktop)
-   - Touch-friendly buttons
-   - Viewport configuration
-
-### Phase 11: Form & API Integration
-**Timeline:** 2-3 hours
-
-**Tasks:**
-1. **Contact Form Setup**
-   - Validation with React Hook Form + Zod
-   - Email submission backend (current: /api/contact)
-   - Success/error messages
-   - CAPTCHA (optional for spam prevention)
-
-2. **Scheduling Integration**
-   - Link "Schedule Now" buttons to JaneApp
-   - Or embed JaneApp scheduling widget (if available)
-   - Deep linking to specific service appointments
-
-3. **Newsletter Signup** (Optional)
-   - Email capture form
-   - Integration with email service
-
-### Phase 12: Testing & QA
-**Timeline:** 2-3 hours
+### Phase 9: Testing & QA
+**Timeline:** 2 hours
 
 **Tasks:**
 1. **Functional Testing**
-   - All links work
-   - Forms submit correctly
+   - All navigation links work
+   - JaneApp booking links open correctly
    - Images load properly
-   - Carousels function
+   - Carousels function smoothly
+   - Phone/email links work (tel:, mailto:)
 
 2. **Browser Testing**
    - Chrome, Firefox, Safari, Edge
@@ -510,30 +481,26 @@ src/pages/WhyHouseCalls.tsx
    - PageSpeed insights
    - Core Web Vitals
 
-### Phase 13: Deployment
+### Phase 10: Deployment
 **Timeline:** 1 hour
 
 **Tasks:**
-1. **Build Optimization**
+1. **Build & Test**
    ```bash
    npm run build
+   npm run preview
    ```
 
-2. **Deploy to Production**
-   - Connect to Vercel (recommended - already configured)
-   - Or deploy to custom hosting
-   - Configure custom domain
+2. **Deploy to Vercel**
+   - Connect GitHub repository
+   - Configure environment variables (if any)
+   - Deploy to production
 
-3. **DNS & Hosting**
-   - Update domain settings if needed
-   - SSL certificate setup
-   - Email forwarding (if using custom domain)
-
-4. **Post-Launch**
-   - Monitor uptime
-   - Check analytics
-   - Monitor error logs
-   - Gather user feedback
+3. **Post-Launch**
+   - Test all functionality on live site
+   - Verify JaneApp booking links work
+   - Check all pages load correctly
+   - Monitor for any errors
 
 ---
 
@@ -701,11 +668,12 @@ src/
 
 ## Environment Variables Setup
 
-Create `.env.local` file:
+Create `.env.local` file (if needed):
 ```
-VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-VITE_JANEAPP_SCHEDULE_URL=your_janeapp_booking_link
+VITE_JANEAPP_SCHEDULE_URL=http://drphilmobilechiro.janeapp.com/
 ```
+
+*Note: JaneApp URL can be hardcoded in components - environment variable is optional.*
 
 ---
 
@@ -730,80 +698,77 @@ New (Dr. Phil - Healing Green):
 
 | Phase | Task | Hours |
 |-------|------|-------|
-| 1 | Project Setup | ✅ Done |
-| 2 | Branding & Customization | 2-3 |
-| 3 | Homepage Rebuild | 4-5 |
+| 1 | Project Setup & Assets | ✅ Done |
+| 2 | Branding & Styling | ✅ Done |
+| 3 | Homepage Components | 6-8 |
 | 4 | Supporting Pages | 2-3 |
-| 5 | Google Maps Integration | 1-2 |
-| 6 | Image Assets & Optimization | 1-2 |
-| 7 | Content Migration | 1-2 |
-| 8 | Routing & Navigation | 1 |
-| 9 | SEO & Meta Tags | 1-2 |
-| 10 | Accessibility & Performance | 1-2 |
-| 11 | Form & API Integration | 2-3 |
-| 12 | Testing & QA | 2-3 |
-| 13 | Deployment | 1 |
-| **TOTAL** | | **23-34 hours** |
+| 5 | Image Assets | 1 |
+| 6 | Routing | 1 |
+| 7 | SEO | 1 |
+| 8 | Accessibility & Performance | 1 |
+| 9 | Testing & QA | 2 |
+| 10 | Deployment | 1 |
+| **TOTAL** | | **15-20 hours** |
 
 ---
 
-## Key Dependencies to Install
+## Key Dependencies
 
 ```bash
-# Google Maps
-npm install @react-google-maps/api
-
-# Router
-npm install react-router-dom
-
 # Already Installed:
-# - embla-carousel-react
-# - lucide-react
-# - react-hook-form
-# - zod
-# - tailwindcss
+# - react-router-dom (routing)
+# - embla-carousel-react (carousels)
+# - lucide-react (icons)
+# - tailwindcss (styling)
 # - shadcn/ui components
 ```
+
+*No additional dependencies needed - all required packages already installed.*
 
 ---
 
 ## Success Criteria
 
-- [ ] Homepage displays correctly with all sections
+- [ ] Homepage displays correctly with all sections and verbatim content
 - [ ] Testimonials carousel functions smoothly
-- [ ] Google Maps displays service area
-- [ ] All forms submit successfully
-- [ ] Links to JaneApp scheduling work
+- [ ] Service area map image displays properly
+- [ ] All "Schedule Now" CTAs link to JaneApp correctly
 - [ ] Mobile responsive on all devices
 - [ ] Lighthouse score > 80
 - [ ] All pages have proper meta tags
 - [ ] Social media sharing displays correctly
-- [ ] Contact information is accurate
-- [ ] All images load quickly
+- [ ] Contact information is accurate (phone, email, social links)
+- [ ] All images load quickly with proper alt text
 - [ ] Navigation works across all pages
+- [ ] Photo carousels on About page work smoothly
+- [ ] All background images from original site are preserved
 
 ---
 
 ## Next Steps
 
-1. **Immediate:** Proceed with Phase 2 - Branding & Customization
-2. **Quick Wins:** Update colors, logo, text on existing components
-3. **Build Components:** Create new components for chiropractic-specific sections
-4. **Integrate Maps:** Add Google Maps API and create service area map
-5. **Test & Deploy:** Full testing before launching to production
+1. **Immediate:** Build homepage components with verbatim content from original site
+2. **Quick Wins:** Implement Hero section, Features, and Service Area with exact copy
+3. **Build Components:** Doctor Profile, Testimonials carousel, Pricing section
+4. **Supporting Pages:** About and Why House Calls pages with background images
+5. **Extract Images:** Identify and rename hash-named image files from scraped folder
+6. **Test & Deploy:** Cross-browser testing and deployment to Vercel
 
 ---
 
 ## Notes & Considerations
 
-1. **JaneApp Integration:** Clarify if JaneApp has an API for deep linking or if we should embed their widget
-2. **Contact Form Backend:** Current setup uses `/api/contact` endpoint - ensure email provider is configured (SendGrid, Nodemailer, etc.)
-3. **Testimonials:** Gather complete testimonial text, author names, and dates from current website
-4. **Images:** Ensure professional photos meet modern web standards (high quality, optimized for web)
-5. **Analytics:** Consider adding Google Analytics or similar after launch
-6. **Backup:** Keep original scraped HTML files in `/scraped` directory for reference
+1. **JaneApp Integration:** All "Schedule Now" and "Free Consultation" CTAs should link to: http://drphilmobilechiro.janeapp.com/
+2. **No Contact Form:** JaneApp handles all appointment booking - no custom form needed
+3. **Testimonials:** 4 complete testimonials documented in Content Preservation section - use verbatim
+4. **Images:** Hash-named files in scraped/images/full/ need to be identified and renamed to original names
+5. **Background Images:** Use same backgrounds as original site (documented in each page section)
+6. **Static Map:** Use existing service area map screenshot (Screen-Shot-2020-02-05-at-4.16.45-PM.png) - no Google Maps API
+7. **Analytics:** Consider adding after launch
+8. **Backup:** Keep original scraped HTML files in `/scraped` directory for reference
 
 ---
 
-**Created:** January 26, 2026  
-**Version:** 1.0 - Initial Planning
+**Created:** January 26, 2025  
+**Updated:** January 26, 2025  
+**Version:** 2.0 - Updated with actual content from original website

@@ -1,126 +1,1859 @@
 {
-  "project": "Dr. Phil Mobile Chiropractic Website Rebuild",
-  "version": "1.0",
-  "last_updated": "2026-01-29",
-  "tasks": [
+  "project": {
+    "name": "Dr. Phil Mobile Chiropractic Website Rebuild",
+    "version": "2.0",
+    "lastUpdated": "2025-01-29",
+    "status": "in_progress",
+    "framework": "React + TypeScript + Vite + Tailwind CSS",
+    "estimatedHours": "15-20"
+  },
+  "features": [
     {
-      "id": "phase2-colors",
-      "phase": "Phase 2: Branding & Customization",
-      "title": "Update Color Theme",
-      "description": "Replace template's electric-blue theme with Dr. Phil's green (#6c9932) and navy (#10315a) colors in tailwind.config.ts",
-      "priority": 1,
-      "passes": true,
-      "estimated_hours": 0.5,
-      "completed_date": "2026-01-29",
-      "notes": "Updated primary color to HSL(86 50% 39%) for green #6c9932 and secondary to HSL(213 69% 20%) for navy #10315a. Fixed CSS @import order issue."
+      "id": "F001",
+      "title": "Image Assets Extraction & Organization",
+      "description": "Extract, rename, and organize all images from scraped content into proper project structure",
+      "priority": "P1",
+      "phase": 5,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": [],
+      "acceptanceCriteria": [
+        {
+          "id": "AC001-1",
+          "description": "All 6+ hash-named images from scraped/images/full/ are identified",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC001-2",
+          "description": "Images are renamed to original filenames (logo_simple.png, logo_white.png, service map, doctor photos, background images)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC001-3",
+          "description": "All images are placed in src/assets/images/ directory with proper naming convention",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC001-4",
+          "description": "Favicon created from logo_simple.png and added to public/ directory",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC001-5",
+          "description": "All images have descriptive alt text defined",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T001-1",
+          "type": "manual",
+          "description": "Verify all images load correctly in browser",
+          "passes": false
+        },
+        {
+          "id": "T001-2",
+          "type": "manual",
+          "description": "Check favicon appears in browser tab",
+          "passes": false
+        },
+        {
+          "id": "T001-3",
+          "type": "automated",
+          "description": "Verify all image files exist in expected paths",
+          "command": "test -f src/assets/images/logo-simple.png && test -f src/assets/images/logo-white.png",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase2-logo",
-      "phase": "Phase 2: Branding & Customization",
-      "title": "Add Logo & Branding Assets",
-      "description": "Replace template assets with Dr. Phil logo variants and create favicon",
-      "priority": 2,
+      "id": "F002",
+      "title": "Branding & Color Theme Implementation",
+      "description": "Update color scheme, typography, and branding to match original Dr. Phil website",
+      "priority": "P1",
+      "phase": 2,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F001"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC002-1",
+          "description": "Primary color updated to #6c9932 (green) in Tailwind config",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC002-2",
+          "description": "Secondary color updated to #10315a (navy) in Tailwind config",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC002-3",
+          "description": "Poppins font loaded and applied to headings",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC002-4",
+          "description": "Lato font loaded and applied to body text",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC002-5",
+          "description": "Rubik font loaded and applied to top bar and footer",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC002-6",
+          "description": "Logo displays correctly in header and footer",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T002-1",
+          "type": "visual",
+          "description": "Verify primary green color appears on CTA buttons",
+          "passes": false
+        },
+        {
+          "id": "T002-2",
+          "type": "visual",
+          "description": "Verify navy color appears in footer and accents",
+          "passes": false
+        },
+        {
+          "id": "T002-3",
+          "type": "automated",
+          "description": "Check font families in computed styles",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-hero",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Update Hero Section",
-      "description": "Update Hero.tsx with chiropractic headline, new stats, and CTA buttons",
-      "priority": 3,
+      "id": "F003",
+      "title": "Hero Section Component",
+      "description": "Build homepage hero with exact heading, subheading, and CTA from original site",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC003-1",
+          "description": "Main heading displays: 'Adaptive Mobile Chiropractic'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC003-2",
+          "description": "Subheading displays verbatim: 'I come to your home or office so you can get better faster without the hassle'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC003-3",
+          "description": "CTA button labeled 'Schedule Now' links to http://drphilmobilechiro.janeapp.com/",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC003-4",
+          "description": "Background image from original site is applied",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC003-5",
+          "description": "Hero is fully responsive on mobile, tablet, and desktop",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC003-6",
+          "description": "Text is readable over background (proper contrast/overlay)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T003-1",
+          "type": "e2e",
+          "description": "Click 'Schedule Now' button and verify JaneApp URL opens",
+          "passes": false
+        },
+        {
+          "id": "T003-2",
+          "type": "visual",
+          "description": "Verify hero displays correctly at 375px, 768px, 1920px widths",
+          "passes": false
+        },
+        {
+          "id": "T003-3",
+          "type": "accessibility",
+          "description": "Verify heading hierarchy (h1 for main heading)",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-features",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Update Features Section",
-      "description": "Adapt Services.tsx to show 3 chiropractic value propositions (Convenience, Personalized Care, Exercise Prescription)",
-      "priority": 4,
+      "id": "F004",
+      "title": "Features Section (3 Feature Boxes)",
+      "description": "Create three feature boxes with verbatim content from original site",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1.5,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC004-1",
+          "description": "Feature 1: Convenience & Longer Appointment Times with Clock icon and verbatim text",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC004-2",
+          "description": "Feature 2: Personalized & Gentle Treatment with Fingerprint icon and verbatim text",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC004-3",
+          "description": "Feature 3: Exercise Prescription with Running icon and verbatim text",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC004-4",
+          "description": "Features display in responsive grid (1 col mobile, 3 cols desktop)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC004-5",
+          "description": "Icons use lucide-react and match original styling",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T004-1",
+          "type": "visual",
+          "description": "Verify all three feature boxes display with correct icons",
+          "passes": false
+        },
+        {
+          "id": "T004-2",
+          "type": "visual",
+          "description": "Check responsive layout on mobile and desktop",
+          "passes": false
+        },
+        {
+          "id": "T004-3",
+          "type": "content",
+          "description": "Verify exact text matches original site content",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-testimonials",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Create Testimonials Carousel",
-      "description": "Build Testimonials.tsx component with Embla Carousel to display customer testimonials",
-      "priority": 5,
+      "id": "F005",
+      "title": "Service Area Map Component",
+      "description": "Display service area map image with list of 11 cities served",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 2
+      "dependencies": ["F001"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC005-1",
+          "description": "Heading displays: 'Service Area'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC005-2",
+          "description": "Service area map image (Screen-Shot-2020-02-05-at-4.16.45-PM.png) displays",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC005-3",
+          "description": "All 11 cities listed: Alpine, American Fork, Cedar Hills, Highland, Lehi, Orem, Provo, Pleasant Grove, Lindon, Saratoga Springs, Eagle Mountain",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC005-4",
+          "description": "Google Maps link included and functional",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC005-5",
+          "description": "Component is responsive on all devices",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T005-1",
+          "type": "functional",
+          "description": "Click Google Maps link and verify it opens correct location",
+          "passes": false
+        },
+        {
+          "id": "T005-2",
+          "type": "visual",
+          "description": "Verify map image is clear and properly sized",
+          "passes": false
+        },
+        {
+          "id": "T005-3",
+          "type": "content",
+          "description": "Count and verify all 11 cities are listed",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-pricing",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Create Pricing Component",
-      "description": "Build Pricing.tsx with 3-tier pricing cards ($125, $75, $50) and discount section",
-      "priority": 6,
+      "id": "F006",
+      "title": "Doctor Profile Component",
+      "description": "Meet the Doctor section with bio and professional photo",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1.5
+      "dependencies": ["F001"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC006-1",
+          "description": "Heading displays: 'Meet the Doctor'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC006-2",
+          "description": "Doctor name displays: 'Dr. Phil Wilkins DC ATC CNIM'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC006-3",
+          "description": "Full biography from original site displays verbatim",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC006-4",
+          "description": "Professional doctor photo displays beside bio",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC006-5",
+          "description": "Layout is responsive (stacked on mobile, side-by-side on desktop)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T006-1",
+          "type": "visual",
+          "description": "Verify doctor photo displays with good quality",
+          "passes": false
+        },
+        {
+          "id": "T006-2",
+          "type": "content",
+          "description": "Verify bio text matches original content exactly",
+          "passes": false
+        },
+        {
+          "id": "T006-3",
+          "type": "responsive",
+          "description": "Test layout on mobile (320px) and desktop (1920px)",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-doctor-profile",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Create Doctor Profile Component",
-      "description": "Build DoctorProfile.tsx with photo, credentials, and short bio",
-      "priority": 7,
+      "id": "F007",
+      "title": "What to Expect Component",
+      "description": "Three-step checklist explaining the treatment process",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 0.5,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1.5
+      "dependencies": [],
+      "acceptanceCriteria": [
+        {
+          "id": "AC007-1",
+          "description": "Heading displays: 'What to Expect'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC007-2",
+          "description": "Three checklist items display with check icons",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC007-3",
+          "description": "All text is verbatim from original site",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC007-4",
+          "description": "Step 1 mentions 45-60 minute initial visit",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC007-5",
+          "description": "Step 2 mentions 30-minute follow-up appointments",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC007-6",
+          "description": "Step 3 mentions Dr. Phil is 100% mobile",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T007-1",
+          "type": "visual",
+          "description": "Verify check icons appear beside each item",
+          "passes": false
+        },
+        {
+          "id": "T007-2",
+          "type": "content",
+          "description": "Verify all three steps display complete text",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-service-area",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Create Service Area Map Component",
-      "description": "Build ServiceAreaMap.tsx showing 11 service cities in Utah",
-      "priority": 8,
+      "id": "F008",
+      "title": "Testimonials Carousel",
+      "description": "Carousel component displaying 4 patient testimonials with Embla",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 2,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 2
+      "dependencies": ["F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC008-1",
+          "description": "Heading displays: 'What People Are Saying About Dr. Phil'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-2",
+          "description": "All 4 testimonials display with verbatim text and author names (Melissa M., Ashlee E., Kolt E., Crystal P.)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-3",
+          "description": "Carousel uses Embla Carousel (shadcn/ui implementation)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-4",
+          "description": "Navigation arrows (prev/next) are functional",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-5",
+          "description": "Carousel displays 1 slide on mobile, 2-3 on desktop",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-6",
+          "description": "Carousel has navigation dots/indicators",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC008-7",
+          "description": "Auto-play functionality works (optional feature)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T008-1",
+          "type": "functional",
+          "description": "Click next arrow and verify carousel advances",
+          "passes": false
+        },
+        {
+          "id": "T008-2",
+          "type": "functional",
+          "description": "Click previous arrow and verify carousel goes back",
+          "passes": false
+        },
+        {
+          "id": "T008-3",
+          "type": "content",
+          "description": "Verify all 4 testimonials are accessible via carousel",
+          "passes": false
+        },
+        {
+          "id": "T008-4",
+          "type": "responsive",
+          "description": "Test carousel displays 1 item at 375px width",
+          "passes": false
+        },
+        {
+          "id": "T008-5",
+          "type": "responsive",
+          "description": "Test carousel displays 2-3 items at 1920px width",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase3-contact",
-      "phase": "Phase 3: Homepage Rebuild",
-      "title": "Update Contact Component",
-      "description": "Update Contact.tsx with Dr. Phil's contact info (phone, email) and form fields",
-      "priority": 9,
+      "id": "F009",
+      "title": "Pricing Component",
+      "description": "Three-tier pricing cards plus discount section with icons",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1.5,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC009-1",
+          "description": "Heading displays: 'Pricing'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-2",
+          "description": "Three pricing tiers display: Getting Started ($125), Follow Up Treatment ($75), Adjustment Only ($50)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-3",
+          "description": "Each tier includes verbatim description and duration",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-4",
+          "description": "Discount section displays with heading 'Discount Rates Are Available For:'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-5",
+          "description": "Five discount categories shown with icons: Educators, Military, Law Enforcement, Firefighters, Multiple Family Members",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-6",
+          "description": "CTA button 'Get Started' links to JaneApp URL",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC009-7",
+          "description": "Pricing cards are responsive (stacked on mobile, 3 columns on desktop)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T009-1",
+          "type": "visual",
+          "description": "Verify all three pricing cards display with correct amounts",
+          "passes": false
+        },
+        {
+          "id": "T009-2",
+          "type": "visual",
+          "description": "Verify all five discount icons display correctly",
+          "passes": false
+        },
+        {
+          "id": "T009-3",
+          "type": "functional",
+          "description": "Click 'Get Started' button and verify JaneApp URL opens",
+          "passes": false
+        },
+        {
+          "id": "T009-4",
+          "type": "responsive",
+          "description": "Test pricing layout on mobile and desktop",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase4-about-page",
-      "phase": "Phase 4: Supporting Pages",
-      "title": "Create About Page",
-      "description": "Build About.tsx page with full doctor biography, certifications, and photo carousel",
-      "priority": 10,
+      "id": "F010",
+      "title": "Footer Component with Contact Info",
+      "description": "Footer with contact information, social links, and navigation (no contact form)",
+      "priority": "P1",
+      "phase": 3,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 2
+      "dependencies": ["F001", "F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC010-1",
+          "description": "Phone number 801-369-3122 displays with clickable tel: link",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-2",
+          "description": "Email doctorphilchiro@gmail.com displays with clickable mailto: link",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-3",
+          "description": "Facebook link to https://www.facebook.com/drphilmobilechiro/ is functional",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-4",
+          "description": "Instagram link is functional",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-5",
+          "description": "White logo displays in footer",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-6",
+          "description": "Navigation links to all pages work",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-7",
+          "description": "'Schedule Now' CTA button links to JaneApp",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC010-8",
+          "description": "NO contact form is present (requirement: JaneApp handles booking)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T010-1",
+          "type": "functional",
+          "description": "Click phone number and verify tel: protocol works",
+          "passes": false
+        },
+        {
+          "id": "T010-2",
+          "type": "functional",
+          "description": "Click email and verify mailto: opens email client",
+          "passes": false
+        },
+        {
+          "id": "T010-3",
+          "type": "functional",
+          "description": "Click Facebook icon and verify correct page opens",
+          "passes": false
+        },
+        {
+          "id": "T010-4",
+          "type": "functional",
+          "description": "Click Instagram icon and verify correct profile opens",
+          "passes": false
+        },
+        {
+          "id": "T010-5",
+          "type": "validation",
+          "description": "Confirm no contact form exists in footer or anywhere on site",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase4-why-house-calls",
-      "phase": "Phase 4: Supporting Pages",
-      "title": "Create Why House Calls Page",
-      "description": "Build WhyHouseCalls.tsx with value proposition and benefits grid",
-      "priority": 11,
+      "id": "F011",
+      "title": "About Page",
+      "description": "Full About page with extended biography and photo carousel",
+      "priority": "P2",
+      "phase": 4,
+      "estimatedHours": 2,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 2
+      "dependencies": ["F001", "F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC011-1",
+          "description": "Page title is 'About'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-2",
+          "description": "Background image Photo-Jan-09-7-42-10-PM-scaled.jpg displays in hero",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-3",
+          "description": "Extended doctor biography displays verbatim from content preservation section",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-4",
+          "description": "Photo carousel displays 3 professional photos (DSC_0040, DSC_0165, DSC_0255)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-5",
+          "description": "Carousel uses Embla Carousel",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-6",
+          "description": "'Free Consultation' CTA button links to JaneApp",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC011-7",
+          "description": "Page is fully responsive",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T011-1",
+          "type": "visual",
+          "description": "Verify background image displays correctly",
+          "passes": false
+        },
+        {
+          "id": "T011-2",
+          "type": "functional",
+          "description": "Navigate through all 3 photos in carousel",
+          "passes": false
+        },
+        {
+          "id": "T011-3",
+          "type": "content",
+          "description": "Verify extended bio matches verbatim content",
+          "passes": false
+        },
+        {
+          "id": "T011-4",
+          "type": "functional",
+          "description": "Click 'Free Consultation' and verify JaneApp opens",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase8-routing",
-      "phase": "Phase 8: Routing & Navigation",
-      "title": "Setup React Router",
-      "description": "Install react-router-dom and create routing structure for all pages",
-      "priority": 12,
+      "id": "F012",
+      "title": "Why House Calls Page",
+      "description": "Why House Calls page with value proposition and background image",
+      "priority": "P2",
+      "phase": 4,
+      "estimatedHours": 1.5,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F001", "F002"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC012-1",
+          "description": "Page title is 'Why House Calls'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC012-2",
+          "description": "Background image DSC_0019-scaled.jpg displays in hero",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC012-3",
+          "description": "Three paragraphs display verbatim from content preservation section",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC012-4",
+          "description": "'Free Consultation' CTA button links to JaneApp",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC012-5",
+          "description": "Page is fully responsive",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T012-1",
+          "type": "visual",
+          "description": "Verify background image displays correctly",
+          "passes": false
+        },
+        {
+          "id": "T012-2",
+          "type": "content",
+          "description": "Verify all three paragraphs display with verbatim text",
+          "passes": false
+        },
+        {
+          "id": "T012-3",
+          "type": "functional",
+          "description": "Click 'Free Consultation' and verify JaneApp opens",
+          "passes": false
+        }
+      ]
     },
     {
-      "id": "phase9-seo",
-      "phase": "Phase 9: SEO & Meta Tags",
-      "title": "Update SEO Meta Tags",
-      "description": "Update HTML meta tags, titles, descriptions, and Open Graph tags",
-      "priority": 13,
+      "id": "F013",
+      "title": "Routing & Navigation",
+      "description": "React Router configuration for all pages with header navigation",
+      "priority": "P1",
+      "phase": 6,
+      "estimatedHours": 1,
+      "status": "not_started",
       "passes": false,
-      "estimated_hours": 1
+      "dependencies": ["F003", "F011", "F012"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC013-1",
+          "description": "Route configured for / (Homepage)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-2",
+          "description": "Route configured for /about (About page)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-3",
+          "description": "Route configured for /why-house-calls (Why House Calls page)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-4",
+          "description": "Route configured for /404 (Not Found page)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-5",
+          "description": "Header navigation shows active state for current page",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-6",
+          "description": "Mobile menu is functional and displays all navigation links",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC013-7",
+          "description": "All navigation links work without page reload (SPA behavior)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T013-1",
+          "type": "functional",
+          "description": "Navigate to each page and verify URL changes correctly",
+          "passes": false
+        },
+        {
+          "id": "T013-2",
+          "type": "functional",
+          "description": "Test direct URL access to /about and /why-house-calls",
+          "passes": false
+        },
+        {
+          "id": "T013-3",
+          "type": "functional",
+          "description": "Test 404 page for invalid routes",
+          "passes": false
+        },
+        {
+          "id": "T013-4",
+          "type": "visual",
+          "description": "Verify active navigation state highlights current page",
+          "passes": false
+        },
+        {
+          "id": "T013-5",
+          "type": "functional",
+          "description": "Open mobile menu and test all navigation links",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F014",
+      "title": "SEO & Meta Tags",
+      "description": "Comprehensive SEO optimization with meta tags, Open Graph, and page-specific metadata",
+      "priority": "P3",
+      "phase": 7,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F003", "F011", "F012"],
+      "futureEnhancement": true,
+      "acceptanceCriteria": [
+        {
+          "id": "AC014-1",
+          "description": "Homepage title: 'Adaptive Mobile Chiropractic - Dr. Phil Wilkins DC ATC CNIM'",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-2",
+          "description": "Homepage meta description includes key services and service area cities",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-3",
+          "description": "About page has unique title and description",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-4",
+          "description": "Why House Calls page has unique title and description",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-5",
+          "description": "Open Graph tags (og:title, og:description, og:image, og:url, og:type) present on all pages",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-6",
+          "description": "Twitter Card tags configured",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-7",
+          "description": "Canonical URLs set for all pages",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-8",
+          "description": "robots.txt file configured properly",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC014-9",
+          "description": "Schema.org structured data for LocalBusiness and MedicalBusiness",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T014-1",
+          "type": "automated",
+          "description": "Verify all meta tags present in HTML head",
+          "passes": false
+        },
+        {
+          "id": "T014-2",
+          "type": "tool",
+          "description": "Run Facebook Sharing Debugger to verify OG tags",
+          "passes": false
+        },
+        {
+          "id": "T014-3",
+          "type": "tool",
+          "description": "Run Twitter Card Validator",
+          "passes": false
+        },
+        {
+          "id": "T014-4",
+          "type": "tool",
+          "description": "Verify structured data with Google Rich Results Test",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F015",
+      "title": "Accessibility Compliance",
+      "description": "WCAG 2.1 AA accessibility compliance for all components",
+      "priority": "P2",
+      "phase": 8,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": [],
+      "acceptanceCriteria": [
+        {
+          "id": "AC015-1",
+          "description": "All interactive elements have ARIA labels",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-2",
+          "description": "Keyboard navigation works for all interactive elements (tab, enter, space, arrows)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-3",
+          "description": "All images have descriptive alt text",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-4",
+          "description": "Color contrast ratios meet WCAG AA standards (4.5:1 for normal text, 3:1 for large text)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-5",
+          "description": "Focus indicators are visible on all interactive elements",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-6",
+          "description": "Heading hierarchy is semantic and logical (h1, h2, h3)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-7",
+          "description": "Form inputs have associated labels",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC015-8",
+          "description": "Skip navigation link present for keyboard users",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T015-1",
+          "type": "automated",
+          "description": "Run axe DevTools accessibility audit",
+          "passes": false
+        },
+        {
+          "id": "T015-2",
+          "type": "manual",
+          "description": "Navigate entire site using only keyboard",
+          "passes": false
+        },
+        {
+          "id": "T015-3",
+          "type": "tool",
+          "description": "Run WAVE accessibility checker",
+          "passes": false
+        },
+        {
+          "id": "T015-4",
+          "type": "automated",
+          "description": "Check color contrast with Lighthouse audit",
+          "passes": false
+        },
+        {
+          "id": "T015-5",
+          "type": "manual",
+          "description": "Test with screen reader (NVDA or JAWS)",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F016",
+      "title": "Performance Optimization",
+      "description": "Performance optimizations for fast loading and smooth UX",
+      "priority": "P2",
+      "phase": 8,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F001"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC016-1",
+          "description": "All images use lazy loading",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-2",
+          "description": "Code splitting implemented for page routes",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-3",
+          "description": "Lighthouse Performance score > 80",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-4",
+          "description": "First Contentful Paint (FCP) < 2 seconds",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-5",
+          "description": "Largest Contentful Paint (LCP) < 2.5 seconds",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-6",
+          "description": "Cumulative Layout Shift (CLS) < 0.1",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC016-7",
+          "description": "Total bundle size < 500KB (gzipped)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T016-1",
+          "type": "automated",
+          "description": "Run Lighthouse performance audit",
+          "passes": false
+        },
+        {
+          "id": "T016-2",
+          "type": "automated",
+          "description": "Check bundle size with npm run build",
+          "passes": false
+        },
+        {
+          "id": "T016-3",
+          "type": "tool",
+          "description": "Run PageSpeed Insights",
+          "passes": false
+        },
+        {
+          "id": "T016-4",
+          "type": "tool",
+          "description": "Analyze Core Web Vitals in production",
+          "passes": false
+        },
+        {
+          "id": "T016-5",
+          "type": "manual",
+          "description": "Test loading on slow 3G connection",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F017",
+      "title": "Cross-Browser & Cross-Device Testing",
+      "description": "Comprehensive testing across browsers and devices",
+      "priority": "P1",
+      "phase": 9,
+      "estimatedHours": 2,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F003", "F004", "F005", "F006", "F007", "F008", "F009", "F010", "F011", "F012", "F013"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC017-1",
+          "description": "Site works correctly in Chrome (latest version)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-2",
+          "description": "Site works correctly in Firefox (latest version)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-3",
+          "description": "Site works correctly in Safari (latest version)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-4",
+          "description": "Site works correctly in Edge (latest version)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-5",
+          "description": "Site works on iOS Safari (iPhone)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-6",
+          "description": "Site works on Chrome Mobile (Android)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-7",
+          "description": "Responsive at 375px width (iPhone SE)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-8",
+          "description": "Responsive at 414px width (iPhone Plus)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-9",
+          "description": "Responsive at 768px width (iPad portrait)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-10",
+          "description": "Responsive at 1024px width (iPad landscape)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-11",
+          "description": "Responsive at 1366px width (laptop)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC017-12",
+          "description": "Responsive at 1920px width (desktop)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T017-1",
+          "type": "manual",
+          "description": "Test all features in Chrome DevTools device emulator",
+          "passes": false
+        },
+        {
+          "id": "T017-2",
+          "type": "manual",
+          "description": "Test on physical iPhone device",
+          "passes": false
+        },
+        {
+          "id": "T017-3",
+          "type": "manual",
+          "description": "Test on physical Android device",
+          "passes": false
+        },
+        {
+          "id": "T017-4",
+          "type": "manual",
+          "description": "Test on physical iPad device",
+          "passes": false
+        },
+        {
+          "id": "T017-5",
+          "type": "tool",
+          "description": "Use BrowserStack for cross-browser testing",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F018",
+      "title": "Functional Integration Testing",
+      "description": "End-to-end testing of all user flows and integrations",
+      "priority": "P1",
+      "phase": 9,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F013"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC018-1",
+          "description": "All 'Schedule Now' buttons open JaneApp in new tab",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-2",
+          "description": "All 'Free Consultation' buttons open JaneApp in new tab",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-3",
+          "description": "All 'Get Started' buttons open JaneApp in new tab",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-4",
+          "description": "Phone number links trigger phone dialer on mobile",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-5",
+          "description": "Email link opens default email client",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-6",
+          "description": "Social media links open correct profiles",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-7",
+          "description": "Google Maps link opens correct location",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-8",
+          "description": "All carousels (testimonials, photos) function smoothly",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC018-9",
+          "description": "Mobile menu opens and closes correctly",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T018-1",
+          "type": "e2e",
+          "description": "User flow: Homepage -> Click Schedule Now -> Verify JaneApp opens",
+          "passes": false
+        },
+        {
+          "id": "T018-2",
+          "type": "e2e",
+          "description": "User flow: About page -> Click Free Consultation -> Verify JaneApp opens",
+          "passes": false
+        },
+        {
+          "id": "T018-3",
+          "type": "e2e",
+          "description": "User flow: Why House Calls -> Click Free Consultation -> Verify JaneApp opens",
+          "passes": false
+        },
+        {
+          "id": "T018-4",
+          "type": "functional",
+          "description": "Click phone number in footer on mobile device",
+          "passes": false
+        },
+        {
+          "id": "T018-5",
+          "type": "functional",
+          "description": "Navigate through all testimonials in carousel",
+          "passes": false
+        },
+        {
+          "id": "T018-6",
+          "type": "functional",
+          "description": "Navigate through all doctor photos in About page carousel",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F019",
+      "title": "Production Deployment",
+      "description": "Build, deploy to Vercel, and verify production site",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 1,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F017", "F018"],
+      "acceptanceCriteria": [
+        {
+          "id": "AC019-1",
+          "description": "Production build completes without errors",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-2",
+          "description": "Site deploys successfully to Vercel",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-3",
+          "description": "Custom domain configured (if applicable)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-4",
+          "description": "SSL certificate active (HTTPS)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-5",
+          "description": "All environment variables configured in Vercel",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-6",
+          "description": "All pages load correctly on production URL",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-7",
+          "description": "All external links work on production",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC019-8",
+          "description": "No console errors on production site",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T019-1",
+          "type": "automated",
+          "description": "Run npm run build and verify no errors",
+          "passes": false
+        },
+        {
+          "id": "T019-2",
+          "type": "manual",
+          "description": "Test production preview with npm run preview",
+          "passes": false
+        },
+        {
+          "id": "T019-3",
+          "type": "manual",
+          "description": "Verify production deployment on Vercel dashboard",
+          "passes": false
+        },
+        {
+          "id": "T019-4",
+          "type": "automated",
+          "description": "Run smoke tests on production URL",
+          "passes": false
+        },
+        {
+          "id": "T019-5",
+          "type": "manual",
+          "description": "Check browser console for errors on production",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F020",
+      "title": "Theme & Layout Templates (Future)",
+      "description": "Create 2-3 alternative theme/layout templates for client review",
+      "priority": "P4",
+      "phase": null,
+      "estimatedHours": 6,
+      "status": "not_started",
+      "passes": false,
+      "dependencies": ["F019"],
+      "futureEnhancement": true,
+      "acceptanceCriteria": [
+        {
+          "id": "AC020-1",
+          "description": "Create Theme Variant 1: Modern Minimal (clean white, lots of space)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-2",
+          "description": "Create Theme Variant 2: Professional Medical (blues and whites, trust-focused)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-3",
+          "description": "Create Theme Variant 3: Warm & Approachable (earth tones, personal touch)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-4",
+          "description": "Each theme has complete color palette, typography, and component styling",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-5",
+          "description": "Theme switcher UI component for easy client preview",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-6",
+          "description": "Layout Variant A: Traditional (top nav, linear sections)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-7",
+          "description": "Layout Variant B: Split Screen (asymmetric, modern)",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC020-8",
+          "description": "Layout Variant C: Card-Based (modular, Pinterest-style)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T020-1",
+          "type": "visual",
+          "description": "Preview each theme variant on homepage",
+          "passes": false
+        },
+        {
+          "id": "T020-2",
+          "type": "visual",
+          "description": "Preview each layout variant on homepage",
+          "passes": false
+        },
+        {
+          "id": "T020-3",
+          "type": "manual",
+          "description": "Client review session with screen recordings of each variant",
+          "passes": false
+        }
+      ]
     }
-  ]
+  ],
+  "testSuites": [
+    {
+      "id": "TS001",
+      "name": "Smoke Tests",
+      "description": "Quick verification that critical functionality works",
+      "priority": "P1",
+      "tests": [
+        {
+          "id": "ST001",
+          "description": "Homepage loads without errors",
+          "passes": false
+        },
+        {
+          "id": "ST002",
+          "description": "All navigation links work",
+          "passes": false
+        },
+        {
+          "id": "ST003",
+          "description": "At least one JaneApp link works",
+          "passes": false
+        },
+        {
+          "id": "ST004",
+          "description": "Images load on homepage",
+          "passes": false
+        },
+        {
+          "id": "ST005",
+          "description": "Mobile menu opens",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "TS002",
+      "name": "Content Verification",
+      "description": "Verify all content matches original site verbatim",
+      "priority": "P1",
+      "tests": [
+        {
+          "id": "CV001",
+          "description": "Hero heading matches: 'Adaptive Mobile Chiropractic'",
+          "passes": false
+        },
+        {
+          "id": "CV002",
+          "description": "All 4 testimonials present with correct names",
+          "passes": false
+        },
+        {
+          "id": "CV003",
+          "description": "All 3 pricing tiers show correct amounts",
+          "passes": false
+        },
+        {
+          "id": "CV004",
+          "description": "Service area lists all 11 cities",
+          "passes": false
+        },
+        {
+          "id": "CV005",
+          "description": "Contact info correct: 801-369-3122, doctorphilchiro@gmail.com",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "TS003",
+      "name": "JaneApp Integration",
+      "description": "Verify all CTAs link to JaneApp correctly",
+      "priority": "P1",
+      "tests": [
+        {
+          "id": "JA001",
+          "description": "Hero 'Schedule Now' button -> JaneApp",
+          "passes": false
+        },
+        {
+          "id": "JA002",
+          "description": "Pricing 'Get Started' button -> JaneApp",
+          "passes": false
+        },
+        {
+          "id": "JA003",
+          "description": "About 'Free Consultation' button -> JaneApp",
+          "passes": false
+        },
+        {
+          "id": "JA004",
+          "description": "Why House Calls 'Free Consultation' button -> JaneApp",
+          "passes": false
+        },
+        {
+          "id": "JA005",
+          "description": "Footer 'Schedule Now' button -> JaneApp",
+          "passes": false
+        },
+        {
+          "id": "JA006",
+          "description": "All JaneApp links open correct URL: http://drphilmobilechiro.janeapp.com/",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "TS004",
+      "name": "Responsive Design",
+      "description": "Test responsive behavior at key breakpoints",
+      "priority": "P1",
+      "tests": [
+        {
+          "id": "RD001",
+          "description": "Mobile (375px): All content visible and readable",
+          "passes": false
+        },
+        {
+          "id": "RD002",
+          "description": "Mobile (375px): Hamburger menu works",
+          "passes": false
+        },
+        {
+          "id": "RD003",
+          "description": "Tablet (768px): Layout adjusts appropriately",
+          "passes": false
+        },
+        {
+          "id": "RD004",
+          "description": "Desktop (1920px): Full layout displays correctly",
+          "passes": false
+        },
+        {
+          "id": "RD005",
+          "description": "No horizontal scrolling at any breakpoint",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "TS005",
+      "name": "Performance Benchmarks",
+      "description": "Performance metrics meet requirements",
+      "priority": "P2",
+      "tests": [
+        {
+          "id": "PB001",
+          "description": "Lighthouse Performance score > 80",
+          "passes": false
+        },
+        {
+          "id": "PB002",
+          "description": "First Contentful Paint < 2s",
+          "passes": false
+        },
+        {
+          "id": "PB003",
+          "description": "Largest Contentful Paint < 2.5s",
+          "passes": false
+        },
+        {
+          "id": "PB004",
+          "description": "Cumulative Layout Shift < 0.1",
+          "passes": false
+        },
+        {
+          "id": "PB005",
+          "description": "Total bundle size < 500KB",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "TS006",
+      "name": "Accessibility Audit",
+      "description": "WCAG 2.1 AA compliance checks",
+      "priority": "P2",
+      "tests": [
+        {
+          "id": "AA001",
+          "description": "Lighthouse Accessibility score > 90",
+          "passes": false
+        },
+        {
+          "id": "AA002",
+          "description": "axe DevTools: 0 critical issues",
+          "passes": false
+        },
+        {
+          "id": "AA003",
+          "description": "Keyboard navigation: All interactive elements reachable",
+          "passes": false
+        },
+        {
+          "id": "AA004",
+          "description": "Screen reader: Site is navigable with NVDA",
+          "passes": false
+        },
+        {
+          "id": "AA005",
+          "description": "Color contrast: All text meets 4.5:1 ratio",
+          "passes": false
+        }
+      ]
+    }
+  ],
+  "priorities": {
+    "P1": {
+      "label": "Critical",
+      "description": "Must be completed for initial launch"
+    },
+    "P2": {
+      "label": "High",
+      "description": "Important for quality but not blocking launch"
+    },
+    "P3": {
+      "label": "Medium",
+      "description": "Can be added post-launch"
+    },
+    "P4": {
+      "label": "Low",
+      "description": "Future enhancements for consideration"
+    }
+  },
+  "notes": {
+    "janeappIntegration": "All booking handled through http://drphilmobilechiro.janeapp.com/ - NO custom contact forms",
+    "contentSource": "All content must match verbatim from scraped HTML files in /scraped directory",
+    "imageSource": "Images located in /scraped/images/full/ with hash names - need to be identified and renamed",
+    "noGoogleMapsAPI": "Using static map image instead of Google Maps API integration",
+    "futureEnhancements": ["SEO meta tags optimization", "Theme/layout template variations", "Analytics integration"]
+  }
 }
