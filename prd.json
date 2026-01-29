@@ -1398,8 +1398,8 @@
       "priority": "P1",
       "phase": 9,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [
         "F013"
       ],
@@ -1407,55 +1407,55 @@
         {
           "id": "AC018-1",
           "description": "All 'Schedule Now' buttons open JaneApp in new tab",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-2",
           "description": "All 'Free Consultation' buttons open JaneApp in new tab",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-3",
           "description": "All 'Get Started' buttons open JaneApp in new tab",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-4",
           "description": "Phone number links trigger phone dialer on mobile",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-5",
           "description": "Email link opens default email client",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-6",
           "description": "Social media links open correct profiles",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-7",
           "description": "Google Maps link opens correct location",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-8",
           "description": "All carousels (testimonials, photos) function smoothly",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC018-9",
           "description": "Mobile menu opens and closes correctly",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1464,37 +1464,37 @@
           "id": "T018-1",
           "type": "e2e",
           "description": "User flow: Homepage -> Click Schedule Now -> Verify JaneApp opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T018-2",
           "type": "e2e",
           "description": "User flow: About page -> Click Free Consultation -> Verify JaneApp opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T018-3",
           "type": "e2e",
           "description": "User flow: Why House Calls -> Click Free Consultation -> Verify JaneApp opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T018-4",
           "type": "functional",
           "description": "Click phone number in footer on mobile device",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T018-5",
           "type": "functional",
           "description": "Navigate through all testimonials in carousel",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T018-6",
           "type": "functional",
           "description": "Navigate through all doctor photos in About page carousel",
-          "passes": false
+          "passes": true
         }
       ]
     },
