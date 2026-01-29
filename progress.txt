@@ -994,3 +994,26 @@ PERFORMANCE METRICS:
 - `src/test/accessibility.test.tsx`: Removed Contact component tests
 - `prd.json`: Updated F021 task to complete with passes: true
 
+
+=== Task F022: Bug Fix: Correct Footer Logo ===
+Date: 2026-01-29
+Status: COMPLETED
+
+Changes Made:
+- Updated Footer.tsx to use logoSimple instead of logoWhite
+- The footer now displays the black and white logo (logo-simple.jpg) which matches the original scraped site
+- The logoSimple is the same 3.8KB file from the scraped images (e96a0aeb83a5295eeec8c5c18c512bf263ebcfdd.jpg)
+
+Files Modified:
+- src/components/Footer.tsx
+
+Tests:
+- All existing tests pass (34/34 tests passing)
+- TypeScript type checking passes with no errors
+
+Acceptance Criteria Met:
+ AC022-1: Black and white logo identified from scraped/images/full/ directory
+ AC022-2: Black and white logo is displayed in footer instead of current logo
+ AC022-3: Logo displays properly with correct contrast on footer background
+
+Next Priority Task: To be determined from PRD

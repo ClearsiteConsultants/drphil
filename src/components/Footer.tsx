@@ -10,8 +10,8 @@ const Footer = () => {
           <div>
             <a href="/" className="flex items-center group mb-4" aria-label="Dr. Phil Mobile Chiropractic Home">
               <img 
-                src={IMAGES.logoWhite.src} 
-                alt={IMAGES.logoWhite.alt}
+                src={IMAGES.logoSimple.src} 
+                alt={IMAGES.logoSimple.alt}
                 className="h-12 w-auto"
                 loading="lazy"
               />
