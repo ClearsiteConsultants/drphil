@@ -5,7 +5,6 @@ import { axe, toHaveNoViolations } from 'jest-axe';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 expect.extend(toHaveNoViolations);
@@ -33,12 +32,6 @@ describe('Accessibility Tests', () => {
     expect(results).toHaveNoViolations();
   });
 
-  it('Contact component should have no accessibility violations', async () => {
-    const { container } = render(<Contact />);
-    const results = await axe(container);
-    expect(results).toHaveNoViolations();
-  });
-
   it('Footer component should have no accessibility violations', async () => {
     const { container } = renderWithRouter(<Footer />);
     const results = await axe(container);
@@ -56,17 +49,6 @@ describe('Accessibility Tests', () => {
     const skipLink = container.querySelector('a[href="#main-content"]');
     expect(skipLink).toBeTruthy();
     expect(skipLink?.textContent).toBe('Skip to main content');
-  });
-
-  it('Contact form has proper label associations', () => {
-    const { container } = render(<Contact />);
-    const nameInput = container.querySelector('#contact-name');
-    const emailInput = container.querySelector('#contact-email');
-    const messageInput = container.querySelector('#contact-message');
-    
-    expect(nameInput).toBeTruthy();
-    expect(emailInput).toBeTruthy();
-    expect(messageInput).toBeTruthy();
   });
 
   it('Navigation has proper ARIA roles', () => {

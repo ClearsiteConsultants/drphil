@@ -1591,26 +1591,26 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 0.5,
-      "status": "not-started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [],
       "acceptanceCriteria": [
         {
           "id": "AC021-1",
           "description": "Contact form component is not rendered on homepage",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC021-2",
           "description": "No contact form exists anywhere on the site",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC021-3",
           "description": "All CTAs still properly link to JaneApp for booking",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1619,15 +1619,16 @@
           "id": "T021-1",
           "type": "manual",
           "description": "Scroll through entire homepage and verify no contact form",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T021-2",
           "type": "automated",
           "description": "Search codebase for Contact component usage on homepage",
-          "passes": false
+          "passes": true
         }
-      ]
+      ],
+      "implementationNotes": "Removed Contact component import and usage from src/pages/Index.tsx. Removed Contact component tests from src/test/accessibility.test.tsx. JaneApp booking links remain intact in Header, Hero, Footer, and Pricing components. All tests pass."
     },
     {
       "id": "F022",

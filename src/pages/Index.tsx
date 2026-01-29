@@ -8,7 +8,6 @@ import DoctorProfile from "@/components/DoctorProfile";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import WhyUs from "@/components/WhyUs";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
@@ -35,7 +34,6 @@ const Index = () => {
         <Pricing />
       </div>
       <WhyUs />
-      <Contact />
       <Footer />
     </div>
   );

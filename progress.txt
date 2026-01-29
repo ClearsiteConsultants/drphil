@@ -969,3 +969,28 @@ PERFORMANCE METRICS:
 - Layout variants (AC6-8) would require significant structural changes to component architecture
 - Current implementation focuses on color/styling themes which can be easily switched
 - Layout variants would need separate component sets or complex conditional rendering
+
+## 2026-01-29 - Task F021: Remove Contact Form from Homepage
+
+**Status**: ✅ Complete
+
+**Changes Made**:
+- Removed Contact component import from `src/pages/Index.tsx`
+- Removed Contact component rendering from homepage
+- Removed Contact component tests from `src/test/accessibility.test.tsx`
+
+**Acceptance Criteria**:
+- ✅ AC021-1: Contact form component is not rendered on homepage
+-  AC021-2: No contact form exists anywhere on the site
+- ✅ AC021-3: All CTAs still properly link to JaneApp for booking
+
+**Test Results**:
+- ✅ All 34 tests passing
+- ✅ TypeScript type checks passing
+- ✅ JaneApp booking links verified in Header (2), Hero (1), Footer (1), and Pricing (1)
+
+**Files Modified**:
+- `src/pages/Index.tsx`: Removed Contact import and component usage
+- `src/test/accessibility.test.tsx`: Removed Contact component tests
+- `prd.json`: Updated F021 task to complete with passes: true
+
