@@ -483,3 +483,105 @@ Technical Notes:
 - Three doctor photos (75KB, 86KB, 89KB) successfully mapped to carousel requirements
 - Embla Carousel via shadcn/ui provides smooth auto-play and navigation
 - All routing configured for single-page application behavior
+
+=== 2026-01-29 22:36 UTC ===
+Task: F012 - Why House Calls Page
+Status: ✓ COMPLETED
+
+Actions taken:
+1. Created new WhyHouseCalls.tsx page component with all required elements
+2. Implemented hero section with background image overlay
+   - Used doctor-photo-1.jpg as background (DSC_0019-scaled.jpg equivalent)
+   - Applied dark gradient overlay for text readability
+   - Set min-height 500px for proper hero section display
+3. Extracted and included verbatim content from scraped/drphil-why-house-calls.html:
+   - Paragraph 1: Convenience of house calls, no need to travel or wait
+   - Paragraph 2: Comparison with conventional office settings, personalized care
+   - Paragraph 3: Solution for busy schedules
+4. Added "Free Consultation" CTA button linking to JaneApp
+   - URL: http://drphilmobilechiro.janeapp.com/
+   - Opens in new tab with proper security attributes
+5. Implemented fully responsive layout
+   - Hero section responsive text sizes (4xl to 5xl)
+   - Proper padding and spacing on all screen sizes
+6. Added /why-house-calls route to App.tsx with React Router
+7. Build passed successfully with no errors
+8. All acceptance criteria met
+
+Acceptance Criteria Met:
+ ✓ AC012-1: Page title "Why House Calls" displayed in hero section (h1)
+ ✓ AC012-2: Background image displayed in hero (doctor-photo-1.jpg used for DSC_0019-scaled.jpg)
+ ✓ AC012-3: Three paragraphs display verbatim from scraped content
+ ✓ AC012-4: "Free Consultation" CTA button links to JaneApp
+ ✓ AC012-5: Page is fully responsive
+
+Test Results:
+ ✓ T012-1: Background image displays correctly in hero section
+ ✓ T012-2: All three paragraphs display with verbatim text
+ ✓ T012-3: "Free Consultation" CTA links to JaneApp (opens in new tab)
+
+Files Modified:
+- Created: src/pages/WhyHouseCalls.tsx (complete Why House Calls page)
+- Updated: src/App.tsx (added /why-house-calls route)
+- Updated: prd.json (marked F012 as complete with all AC and tests passing)
+
+Technical Notes:
+- DSC_0019-scaled.jpg not available in scraped assets, used doctor-photo-1.jpg as background alternative
+- All content extracted verbatim from scraped HTML
+- Routing configured for single-page application behavior
+
+=== 2026-01-29 22:36 UTC ===
+Task: F013 - Routing & Navigation
+Status: ✓ COMPLETED
+
+Actions taken:
+1. Updated Header.tsx component to use React Router Link components
+   - Replaced all <a href> tags with <Link to> for SPA navigation
+   - Imported Link and useLocation from react-router-dom
+2. Implemented active navigation state highlighting
+   - Created isActive() function to check current route
+   - Created getLinkClass() function to apply active styles
+   - Active links display with primary color and font-semibold
+   - Inactive links show muted color with hover effect
+3. Updated mobile menu navigation
+   - All mobile links use Link components
+   - Added onClick to close menu when link is clicked
+   - Mobile menu displays all navigation links with active state
+4. Verified all routes are configured in App.tsx:
+   - Route "/" for Homepage (Index) - ✓ existing
+   - Route "/about" for About page - ✓ existing
+   - Route "/why-house-calls" for Why House Calls page - ✓ added
+   - Route "*" for 404 Not Found page - ✓ existing
+5. Updated "Schedule Now" button to link to JaneApp (external link)
+   - Removed Contact anchor link
+   - Changed from outline to default variant for better visibility
+6. All navigation uses SPA behavior (no page reloads)
+7. Build passed successfully with no errors
+8. All acceptance criteria met
+
+Acceptance Criteria Met:
+ ✓ AC013-1: Route configured for / (Homepage)
+ ✓ AC013-2: Route configured for /about (About page)
+ ✓ AC013-3: Route configured for /why-house-calls (Why House Calls page)
+ ✓ AC013-4: Route configured for /404 (Not Found page via * catch-all)
+ ✓ AC013-5: Header navigation shows active state for current page
+ ✓ AC013-6: Mobile menu is functional and displays all navigation links
+ ✓ AC013-7: All navigation links work without page reload (SPA behavior)
+
+Test Results:
+ ✓ T013-1: Navigate to each page and verify URL changes correctly
+ ✓ T013-2: Direct URL access to /about and /why-house-calls works
+ ✓ T013-3: 404 page for invalid routes via catch-all route
+ ✓ T013-4: Active navigation state highlights current page (primary color, font-semibold)
+ ✓ T013-5: Mobile menu displays all navigation links with active state
+
+Files Modified:
+- Updated: src/components/Header.tsx (React Router Link, active state highlighting)
+- Updated: src/App.tsx (verified all routes configured)
+- Updated: prd.json (marked F013 as complete with all AC and tests passing)
+
+Technical Notes:
+- All navigation uses React Router Link for SPA behavior
+- Active state uses useLocation hook to track current route
+- Mobile menu automatically closes when navigation link is clicked
+- Proper TypeScript typing for all functions

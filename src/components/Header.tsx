@@ -1,40 +1,55 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { IMAGES } from "@/constants/images";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
+  const getLinkClass = (path: string) => {
+    return `transition-colors font-medium ${
+      isActive(path) 
+        ? "text-primary font-semibold" 
+        : "text-muted-foreground hover:text-primary"
+    }`;
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group">
             <img 
               src={IMAGES.logoSimple.src} 
               alt={IMAGES.logoSimple.alt}
               className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/" className={getLinkClass("/")}>
               Home
-            </a>
-            <a href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/about" className={getLinkClass("/about")}>
               About
-            </a>
-            <a href="/why-house-calls" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/why-house-calls" className={getLinkClass("/why-house-calls")}>
               Why House Calls
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Contact
-            </a>
-            <a href="#contact">
-              <Button variant="outline" size="sm">
+            </Link>
+            <a 
+              href="http://drphilmobilechiro.janeapp.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="default" size="sm">
                 Schedule Now
               </Button>
             </a>
@@ -52,20 +67,34 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pt-6 pb-4 flex flex-col gap-4 animate-fade-in">
-            <a href="/" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+            <Link 
+              to="/" 
+              className={`${getLinkClass("/")} py-2`}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Home
-            </a>
-            <a href="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+            </Link>
+            <Link 
+              to="/about" 
+              className={`${getLinkClass("/about")} py-2`}
+              onClick={() => setIsMenuOpen(false)}
+            >
               About
-            </a>
-            <a href="/why-house-calls" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
+            </Link>
+            <Link 
+              to="/why-house-calls" 
+              className={`${getLinkClass("/why-house-calls")} py-2`}
+              onClick={() => setIsMenuOpen(false)}
+            >
               Why House Calls
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
-              Contact
-            </a>
-            <a href="#contact" className="w-full mt-2">
-              <Button variant="outline" className="w-full">
+            </Link>
+            <a 
+              href="http://drphilmobilechiro.janeapp.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full mt-2"
+            >
+              <Button variant="default" className="w-full">
                 Schedule Now
               </Button>
             </a>

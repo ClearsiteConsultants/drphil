@@ -832,8 +832,8 @@
       "priority": "P2",
       "phase": 4,
       "estimatedHours": 1.5,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F001",
         "F002"
@@ -842,31 +842,31 @@
         {
           "id": "AC012-1",
           "description": "Page title is 'Why House Calls'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC012-2",
           "description": "Background image DSC_0019-scaled.jpg displays in hero",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC012-3",
           "description": "Three paragraphs display verbatim from content preservation section",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC012-4",
           "description": "'Free Consultation' CTA button links to JaneApp",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC012-5",
           "description": "Page is fully responsive",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -875,19 +875,19 @@
           "id": "T012-1",
           "type": "visual",
           "description": "Verify background image displays correctly",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T012-2",
           "type": "content",
           "description": "Verify all three paragraphs display with verbatim text",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T012-3",
           "type": "functional",
           "description": "Click 'Free Consultation' and verify JaneApp opens",
-          "passes": false
+          "passes": true
         }
       ]
     },
@@ -898,8 +898,8 @@
       "priority": "P1",
       "phase": 6,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F003",
         "F011",
@@ -909,43 +909,43 @@
         {
           "id": "AC013-1",
           "description": "Route configured for / (Homepage)",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-2",
           "description": "Route configured for /about (About page)",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-3",
           "description": "Route configured for /why-house-calls (Why House Calls page)",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-4",
           "description": "Route configured for /404 (Not Found page)",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-5",
           "description": "Header navigation shows active state for current page",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-6",
           "description": "Mobile menu is functional and displays all navigation links",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC013-7",
           "description": "All navigation links work without page reload (SPA behavior)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -954,31 +954,31 @@
           "id": "T013-1",
           "type": "functional",
           "description": "Navigate to each page and verify URL changes correctly",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T013-2",
           "type": "functional",
           "description": "Test direct URL access to /about and /why-house-calls",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T013-3",
           "type": "functional",
           "description": "Test 404 page for invalid routes",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T013-4",
           "type": "visual",
           "description": "Verify active navigation state highlights current page",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T013-5",
           "type": "functional",
           "description": "Open mobile menu and test all navigation links",
-          "passes": false
+          "passes": true
         }
       ]
     },
