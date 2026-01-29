@@ -62,7 +62,7 @@ const About = () => {
       </section>
 
       {/* Photo Carousel Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30" aria-label="Photo gallery">
         <div className="container">
           <Carousel
             opts={{
@@ -75,6 +75,7 @@ const About = () => {
               }),
             ]}
             className="w-full max-w-5xl mx-auto"
+            aria-label="Dr. Phil Wilkins photo gallery"
           >
             <CarouselContent>
               {carouselImages.map((image, index) => (

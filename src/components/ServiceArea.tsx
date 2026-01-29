@@ -16,9 +16,9 @@ const cities = [
 
 export default function ServiceArea() {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-background" aria-labelledby="service-area-heading">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+        <h2 id="service-area-heading" className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
           Service Area
         </h2>
         

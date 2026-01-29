@@ -20,8 +20,9 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white" aria-labelledby="features-heading">
       <div className="container mx-auto px-4">
+        <h2 id="features-heading" className="sr-only">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, index) => {
             const Icon = feature.icon;

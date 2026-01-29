@@ -14,10 +14,10 @@ const steps = [
 
 const WhatToExpect = () => {
   return (
-    <section id="what-to-expect" className="py-24 bg-muted/30">
+    <section id="what-to-expect" className="py-24 bg-muted/30" aria-labelledby="what-to-expect-heading">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-4xl md:text-5xl text-foreground text-center mb-12">
+          <h2 id="what-to-expect-heading" className="font-display text-4xl md:text-5xl text-foreground text-center mb-12">
             What to Expect
           </h2>
           

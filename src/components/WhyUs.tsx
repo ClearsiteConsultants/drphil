@@ -28,13 +28,13 @@ const benefits = [
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="py-24 bg-background">
+    <section id="why-us" className="py-24 bg-background" aria-labelledby="why-us-heading">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div>
             <p className="text-primary font-medium mb-2 tracking-wider uppercase">Who We Are</p>
-            <h2 className="font-display text-4xl md:text-6xl text-foreground mb-6">
+            <h2 id="why-us-heading" className="font-display text-4xl md:text-6xl text-foreground mb-6">
               CARE BUILT ON{' '}
               <span className="text-primary">EXPERTISE & COMPASSION</span>
             </h2>

@@ -33,9 +33,9 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 md:py-24 bg-muted/30">
+    <section className="py-16 md:py-24 bg-muted/30" aria-labelledby="testimonials-heading">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+        <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
           What People Are Saying About Dr. Phil
         </h2>
         
@@ -50,6 +50,7 @@ const Testimonials = () => {
             }),
           ]}
           className="w-full max-w-5xl mx-auto"
+          aria-label="Patient testimonials"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial) => (

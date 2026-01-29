@@ -33,10 +33,10 @@ const discountCategories = [
 
 const Pricing = () => {
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" aria-labelledby="pricing-heading">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+          <h2 id="pricing-heading" className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
             Pricing
           </h2>
         </div>
