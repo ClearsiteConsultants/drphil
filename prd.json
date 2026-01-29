@@ -1,0 +1,126 @@
+{
+  "project": "Dr. Phil Mobile Chiropractic Website Rebuild",
+  "version": "1.0",
+  "last_updated": "2026-01-29",
+  "tasks": [
+    {
+      "id": "phase2-colors",
+      "phase": "Phase 2: Branding & Customization",
+      "title": "Update Color Theme",
+      "description": "Replace template's electric-blue theme with Dr. Phil's green (#6c9932) and navy (#10315a) colors in tailwind.config.ts",
+      "priority": 1,
+      "passes": true,
+      "estimated_hours": 0.5,
+      "completed_date": "2026-01-29",
+      "notes": "Updated primary color to HSL(86 50% 39%) for green #6c9932 and secondary to HSL(213 69% 20%) for navy #10315a. Fixed CSS @import order issue."
+    },
+    {
+      "id": "phase2-logo",
+      "phase": "Phase 2: Branding & Customization",
+      "title": "Add Logo & Branding Assets",
+      "description": "Replace template assets with Dr. Phil logo variants and create favicon",
+      "priority": 2,
+      "passes": false,
+      "estimated_hours": 1
+    },
+    {
+      "id": "phase3-hero",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Update Hero Section",
+      "description": "Update Hero.tsx with chiropractic headline, new stats, and CTA buttons",
+      "priority": 3,
+      "passes": false,
+      "estimated_hours": 1
+    },
+    {
+      "id": "phase3-features",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Update Features Section",
+      "description": "Adapt Services.tsx to show 3 chiropractic value propositions (Convenience, Personalized Care, Exercise Prescription)",
+      "priority": 4,
+      "passes": false,
+      "estimated_hours": 1
+    },
+    {
+      "id": "phase3-testimonials",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Create Testimonials Carousel",
+      "description": "Build Testimonials.tsx component with Embla Carousel to display customer testimonials",
+      "priority": 5,
+      "passes": false,
+      "estimated_hours": 2
+    },
+    {
+      "id": "phase3-pricing",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Create Pricing Component",
+      "description": "Build Pricing.tsx with 3-tier pricing cards ($125, $75, $50) and discount section",
+      "priority": 6,
+      "passes": false,
+      "estimated_hours": 1.5
+    },
+    {
+      "id": "phase3-doctor-profile",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Create Doctor Profile Component",
+      "description": "Build DoctorProfile.tsx with photo, credentials, and short bio",
+      "priority": 7,
+      "passes": false,
+      "estimated_hours": 1.5
+    },
+    {
+      "id": "phase3-service-area",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Create Service Area Map Component",
+      "description": "Build ServiceAreaMap.tsx showing 11 service cities in Utah",
+      "priority": 8,
+      "passes": false,
+      "estimated_hours": 2
+    },
+    {
+      "id": "phase3-contact",
+      "phase": "Phase 3: Homepage Rebuild",
+      "title": "Update Contact Component",
+      "description": "Update Contact.tsx with Dr. Phil's contact info (phone, email) and form fields",
+      "priority": 9,
+      "passes": false,
+      "estimated_hours": 1
+    },
+    {
+      "id": "phase4-about-page",
+      "phase": "Phase 4: Supporting Pages",
+      "title": "Create About Page",
+      "description": "Build About.tsx page with full doctor biography, certifications, and photo carousel",
+      "priority": 10,
+      "passes": false,
+      "estimated_hours": 2
+    },
+    {
+      "id": "phase4-why-house-calls",
+      "phase": "Phase 4: Supporting Pages",
+      "title": "Create Why House Calls Page",
+      "description": "Build WhyHouseCalls.tsx with value proposition and benefits grid",
+      "priority": 11,
+      "passes": false,
+      "estimated_hours": 2
+    },
+    {
+      "id": "phase8-routing",
+      "phase": "Phase 8: Routing & Navigation",
+      "title": "Setup React Router",
+      "description": "Install react-router-dom and create routing structure for all pages",
+      "priority": 12,
+      "passes": false,
+      "estimated_hours": 1
+    },
+    {
+      "id": "phase9-seo",
+      "phase": "Phase 9: SEO & Meta Tags",
+      "title": "Update SEO Meta Tags",
+      "description": "Update HTML meta tags, titles, descriptions, and Open Graph tags",
+      "priority": 13,
+      "passes": false,
+      "estimated_hours": 1
+    }
+  ]
+}

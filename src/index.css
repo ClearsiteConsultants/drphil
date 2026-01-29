@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 20%;
 
-    --primary: 92 36% 42%;
+    --primary: 86 50% 39%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 213 64% 23%;
+    --secondary: 213 69% 20%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 12% 65%;
     --muted-foreground: 220 12% 50%;
 
-    --accent: 92 36% 52%;
+    --accent: 86 50% 49%;
     --accent-foreground: 220 13% 20%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,7 +32,7 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 92 36% 42%;
+    --ring: 86 50% 39%;
 
     --radius: 0.5rem;
 
@@ -40,12 +40,12 @@
     --font-display: 'Bebas Neue', sans-serif;
     --font-body: 'Inter', sans-serif;
     
-    --glow-primary: 0 0 30px hsl(92 36% 42% / 0.15);
-    --glow-primary-intense: 0 0 60px hsl(92 36% 42% / 0.25);
+    --glow-primary: 0 0 30px hsl(86 50% 39% / 0.15);
+    --glow-primary-intense: 0 0 60px hsl(86 50% 39% / 0.25);
     
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 13% 97%) 100%);
-    --gradient-electric: linear-gradient(90deg, hsl(92 36% 42%) 0%, hsl(92 36% 52%) 100%);
+    --gradient-electric: linear-gradient(90deg, hsl(86 50% 39%) 0%, hsl(86 50% 49%) 100%);
   }
 
   .dark {
