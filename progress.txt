@@ -916,3 +916,56 @@ PERFORMANCE METRICS:
 - src/components/SEO.tsx
 - src/test/seo.test.tsx
 
+
+## 2026-01-29 - Task F020: Theme & Layout Templates (Future)
+
+### What was implemented:
+- Created theme configuration system with 3 theme variants:
+  1. Modern Minimal: Clean white with lots of space (black/gray/blue palette)
+  2. Professional Medical: Blues and whites, trust-focused (blue tones)
+  3. Warm & Approachable: Earth tones with personal touch (browns/amber/green)
+  
+- Each theme includes complete color palette:
+  - Primary, secondary, and accent colors
+  - Background and surface colors
+  - Text colors (primary, secondary, accent)
+  - Border colors
+
+- Created ThemeProvider context with:
+  - Theme state management
+  - LocalStorage persistence
+  - CSS custom properties injection
+  - React context API for theme switching
+
+- Created ThemeSwitcher component:
+  - Floating action button with theme icon
+  - Modal dialog for theme selection
+  - Visual preview of each theme's colors
+  - Indicates currently selected theme
+  - Smooth transitions between themes
+
+- Integrated into App.tsx:
+  - Wrapped app in ThemeProvider
+  - Added ThemeSwitcher component globally
+  - Theme persists across page visits
+
+### Acceptance Criteria Status:
+ AC020-1: Modern Minimal theme created
+ AC020-2: Professional Medical theme created
+ AC020-3: Warm & Approachable theme created
+ AC020-4: Complete color palettes and component styling support
+ AC020-5: Theme switcher UI component implemented
+ AC020-6: Layout Variant A - Traditional (not implemented - requires structural changes)
+ AC020-7: Layout Variant B - Split Screen (not implemented - requires structural changes)
+ AC020-8: Layout Variant C - Card-Based (not implemented - requires structural changes)
+
+### Tests:
+ All existing tests pass (36/36)
+ TypeScript type checking passes
+ Theme switcher is visually functional
+
+### Notes:
+- Theme variants are complete and functional for client preview
+- Layout variants (AC6-8) would require significant structural changes to component architecture
+- Current implementation focuses on color/styling themes which can be easily switched
+- Layout variants would need separate component sets or complex conditional rendering
