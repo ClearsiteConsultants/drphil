@@ -17,12 +17,18 @@ const Index = () => {
       <Header />
       <Hero />
       <Features />
-      <Services />
+      <div id="services">
+        <Services />
+      </div>
       <ServiceArea />
       <WhatToExpect />
-      <DoctorProfile />
+      <div id="about">
+        <DoctorProfile />
+      </div>
       <Testimonials />
-      <Pricing />
+      <div id="pricing">
+        <Pricing />
+      </div>
       <WhyUs />
       <Contact />
       <Footer />

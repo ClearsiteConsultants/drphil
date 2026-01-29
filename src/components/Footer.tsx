@@ -26,14 +26,22 @@ const Footer = () => {
             <a href="/" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
               Home
             </a>
-            <a href="/about" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
+            <a href="/#services" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
+              Services
+            </a>
+            <a href="/#about" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
               About Dr. Phil
             </a>
-            <a href="/why-house-calls" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
-              Why House Calls
+            <a href="/#pricing" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
+              Pricing
             </a>
-            <a href="#contact" className="text-sm text-slate-400 hover:text-green-400 transition-colors">
-              Contact
+            <a 
+              href="http://drphilmobilechiro.janeapp.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2 mt-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+            >
+              Schedule Now
             </a>
           </nav>
 
@@ -54,10 +62,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-3 pt-2">
-              <a href="https://www.facebook.com/drphilmobilechiro" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center hover:bg-green-500/30 transition-colors">
+              <a href="https://www.facebook.com/drphilmobilechiro/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center hover:bg-green-500/30 transition-colors" aria-label="Facebook">
                 <Facebook className="w-4 h-4 text-green-400" />
               </a>
-              <a href="https://www.instagram.com/p/B7l9oGzJkiA" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center hover:bg-green-500/30 transition-colors">
+              <a href="https://www.instagram.com/p/B7l9oGzJkiA/?igshid=10ex6php6xbfy" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center hover:bg-green-500/30 transition-colors" aria-label="Instagram">
                 <Instagram className="w-4 h-4 text-green-400" />
               </a>
             </div>

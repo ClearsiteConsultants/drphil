@@ -652,8 +652,8 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F001",
         "F002"
@@ -662,49 +662,49 @@
         {
           "id": "AC010-1",
           "description": "Phone number 801-369-3122 displays with clickable tel: link",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-2",
           "description": "Email doctorphilchiro@gmail.com displays with clickable mailto: link",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-3",
           "description": "Facebook link to https://www.facebook.com/drphilmobilechiro/ is functional",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-4",
           "description": "Instagram link is functional",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-5",
           "description": "White logo displays in footer",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-6",
           "description": "Navigation links to all pages work",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-7",
           "description": "'Schedule Now' CTA button links to JaneApp",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC010-8",
           "description": "NO contact form is present (requirement: JaneApp handles booking)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -713,31 +713,31 @@
           "id": "T010-1",
           "type": "functional",
           "description": "Click phone number and verify tel: protocol works",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T010-2",
           "type": "functional",
           "description": "Click email and verify mailto: opens email client",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T010-3",
           "type": "functional",
           "description": "Click Facebook icon and verify correct page opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T010-4",
           "type": "functional",
           "description": "Click Instagram icon and verify correct profile opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T010-5",
           "type": "validation",
           "description": "Confirm no contact form exists in footer or anywhere on site",
-          "passes": false
+          "passes": true
         }
       ]
     },
