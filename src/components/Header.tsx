@@ -38,6 +38,7 @@ const Header = () => {
               src={IMAGES.logoSimple.src} 
               alt={IMAGES.logoSimple.alt}
               className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
+              loading="eager"
             />
           </Link>
 

@@ -23,4 +23,21 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Enable minification
+    minify: "esbuild",
+    // Code splitting - split vendor code from app code
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-slot', '@radix-ui/react-toast'],
+        },
+      },
+    },
+    // Optimize chunk size warning limit
+    chunkSizeWarningLimit: 1000,
+    // Source maps for production debugging (optional, can be disabled for smaller builds)
+    sourcemap: false,
+  },
 }));

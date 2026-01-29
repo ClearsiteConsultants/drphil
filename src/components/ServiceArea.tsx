@@ -34,6 +34,7 @@ export default function ServiceArea() {
                 src={IMAGES.serviceMap.src}
                 alt={IMAGES.serviceMap.alt}
                 className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
               />
             </a>
           </div>

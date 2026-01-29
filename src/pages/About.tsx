@@ -76,6 +76,7 @@ const About = () => {
                       src={image.src}
                       alt={image.alt}
                       className="w-full h-auto rounded-lg shadow-lg object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CarouselItem>

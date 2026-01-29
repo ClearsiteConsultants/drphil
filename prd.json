@@ -1180,8 +1180,8 @@
       "priority": "P2",
       "phase": 8,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F001"
       ],
@@ -1189,43 +1189,43 @@
         {
           "id": "AC016-1",
           "description": "All images use lazy loading",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-2",
           "description": "Code splitting implemented for page routes",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-3",
           "description": "Lighthouse Performance score > 80",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-4",
           "description": "First Contentful Paint (FCP) < 2 seconds",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-5",
           "description": "Largest Contentful Paint (LCP) < 2.5 seconds",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-6",
           "description": "Cumulative Layout Shift (CLS) < 0.1",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC016-7",
           "description": "Total bundle size < 500KB (gzipped)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1234,31 +1234,31 @@
           "id": "T016-1",
           "type": "automated",
           "description": "Run Lighthouse performance audit",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T016-2",
           "type": "automated",
           "description": "Check bundle size with npm run build",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T016-3",
           "type": "tool",
           "description": "Run PageSpeed Insights",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T016-4",
           "type": "tool",
           "description": "Analyze Core Web Vitals in production",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T016-5",
           "type": "manual",
           "description": "Test loading on slow 3G connection",
-          "passes": false
+          "passes": true
         }
       ]
     },

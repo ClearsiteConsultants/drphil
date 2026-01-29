@@ -29,6 +29,7 @@ const DoctorProfile = () => {
                 src={IMAGES.doctorPhoto2.src} 
                 alt={IMAGES.doctorPhoto2.alt}
                 className="w-full h-auto object-cover"
+                loading="lazy"
               />
             </div>
           </div>

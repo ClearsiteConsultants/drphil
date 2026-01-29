@@ -13,6 +13,7 @@ const Footer = () => {
                 src={IMAGES.logoWhite.src} 
                 alt={IMAGES.logoWhite.alt}
                 className="h-12 w-auto"
+                loading="lazy"
               />
             </a>
             <p className="text-sm text-slate-400 font-topbar">
