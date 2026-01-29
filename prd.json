@@ -1927,8 +1927,8 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 0.5,
-      "status": "not-started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [
         "F003"
       ],
@@ -1936,25 +1936,25 @@
         {
           "id": "AC027-1",
           "description": "Download and add DSC_0453-scaled.jpg from https://drphilmobilechiro.com/wp-content/uploads/sites/82/2020/01/DSC_0453-scaled.jpg",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC027-2",
           "description": "Hero section uses DSC_0453-scaled.jpg as background image",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC027-3",
           "description": "doctor-photo-1.jpg is relocated to another appropriate section on homepage",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC027-4",
           "description": "New hero image displays correctly with proper aspect ratio and positioning",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1963,19 +1963,19 @@
           "id": "T027-1",
           "type": "visual",
           "description": "Verify DSC_0453-scaled.jpg displays as hero background",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T027-2",
           "type": "visual",
           "description": "Verify doctor-photo-1.jpg appears in new location on page",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T027-3",
           "type": "responsive",
           "description": "Test new hero image displays well on mobile and desktop",
-          "passes": false
+          "passes": true
         }
       ]
     }

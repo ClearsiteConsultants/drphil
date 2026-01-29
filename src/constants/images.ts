@@ -15,6 +15,9 @@ import doctorPhoto1 from '../assets/images/doctor-photo-1.jpg';
 import doctorPhoto2 from '../assets/images/doctor-photo-2.jpg';
 import doctorPhoto3 from '../assets/images/doctor-photo-3.jpg';
 
+// Hero image
+import heroImage from '../assets/images/DSC_0453-scaled.jpg';
+
 export const IMAGES = {
   // Logos
   logoSimple: {
@@ -30,6 +33,12 @@ export const IMAGES = {
   serviceMap: {
     src: serviceMap,
     alt: 'Dr. Phil Mobile Chiropractic Service Area Map - Coverage across metro area',
+  },
+
+  // Hero image
+  heroImage: {
+    src: heroImage,
+    alt: 'Dr. Phil Wilkins - Mobile Chiropractic Care',
   },
 
   // Doctor and office photos

@@ -26,8 +26,8 @@ const DoctorProfile = () => {
           <div className="order-1 md:order-2">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src={IMAGES.doctorPhoto2.src} 
-                alt={IMAGES.doctorPhoto2.alt}
+                src={IMAGES.doctorPhoto1.src} 
+                alt={IMAGES.doctorPhoto1.alt}
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />

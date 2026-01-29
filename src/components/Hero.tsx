@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import doctorPhoto1 from "@/assets/images/doctor-photo-1.jpg";
+import { IMAGES } from "@/constants/images";
 
 interface HeroProps {
   heroImage?: string;
 }
 
 const Hero = ({ heroImage }: HeroProps) => {
-  const bgImage = heroImage || doctorPhoto1;
+  const bgImage = heroImage || IMAGES.heroImage.src;
   
   return (
     <section 

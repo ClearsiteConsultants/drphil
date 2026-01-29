@@ -1134,3 +1134,36 @@ The fix bridges the gap between the custom theme system and Tailwind's color sys
 - ✅ Images use proper path format from constants
 
 **Status:** Completed - All acceptance criteria met
+
+=== 2026-01-29 23:38 UTC ===
+Task: F027 - Bug Fix: Replace Top Hero Image
+Status: COMPLETE
+
+Changes Made:
+1. Downloaded DSC_0453-scaled.jpg from original site (447KB image)
+2. Added new hero image to src/assets/images/DSC_0453-scaled.jpg
+3. Updated src/constants/images.ts to include heroImage import and constant
+4. Modified src/components/Hero.tsx to use new heroImage from IMAGES constant
+5. Updated src/components/DoctorProfile.tsx to display doctor-photo-1.jpg (previously unused on homepage)
+6. Relocated doctor-photo-1.jpg from hero section to DoctorProfile section
+
+Acceptance Criteria Met:
+ AC027-1: Downloaded and added DSC_0453-scaled.jpg from original site
+ AC027-2: Hero section now uses DSC_0453-scaled.jpg as background image
+ AC027-3: doctor-photo-1.jpg relocated to DoctorProfile section on homepage
+ AC027-4: New hero image properly integrated with existing responsive design
+
+Tests Passed:
+ All 38 tests pass (vitest)
+ TypeScript type checking passes
+ T027-1: DSC_0453-scaled.jpg displays as hero background
+ T027-2: doctor-photo-1.jpg appears in DoctorProfile section
+ T027-3: Responsive design maintained for hero image
+
+Files Modified:
+- src/constants/images.ts (added heroImage import and constant)
+- src/components/Hero.tsx (updated to use IMAGES.heroImage.src)
+- src/components/DoctorProfile.tsx (changed from doctorPhoto2 to doctorPhoto1)
+- src/assets/images/DSC_0453-scaled.jpg (new file)
+- prd.json (marked F027 as complete with all criteria passing)
+
