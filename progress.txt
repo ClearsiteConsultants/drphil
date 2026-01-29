@@ -1110,3 +1110,27 @@ The fix bridges the gap between the custom theme system and Tailwind's color sys
 - Maintaining backward compatibility with existing --color-* variables
 - Ensuring the theme switcher modal itself uses the new theme
 
+
+## 2026-01-29T23:36 - F026: Bug Fix: About Page Header and Carousel Issues
+
+**Task:** Fix missing header navigation on About page and broken images/links in carousel at bottom of page
+
+**Changes Made:**
+1. Added Header component import and rendering to About page
+2. Added Footer component import and rendering to About page for consistency
+3. Fixed carousel images to use correct `.src` property from IMAGES constant
+4. Fixed hero section background image to use `.src` property
+5. Updated page wrapper to use flex flex-col layout for proper header/footer positioning
+
+**Files Modified:**
+- src/pages/About.tsx
+
+**Testing:**
+- ✅ All TypeScript type checks pass
+- ✅ All 38 tests pass (4 test suites)
+- ✅ Header now displays on About page with functional navigation
+- ✅ Footer displays properly
+- ✅ All 3 doctor photos in carousel load correctly without errors
+- ✅ Images use proper path format from constants
+
+**Status:** Completed - All acceptance criteria met

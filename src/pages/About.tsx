@@ -9,24 +9,27 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { IMAGES } from "@/constants/images";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const About = () => {
   const carouselImages = [
-    { src: IMAGES.doctorPhoto1, alt: "Dr. Phil Wilkins providing chiropractic treatment" },
-    { src: IMAGES.doctorPhoto2, alt: "Dr. Phil Wilkins treatment session" },
-    { src: IMAGES.doctorPhoto3, alt: "Dr. Phil Wilkins professional care" },
+    { src: IMAGES.doctorPhoto1.src, alt: "Dr. Phil Wilkins providing chiropractic treatment" },
+    { src: IMAGES.doctorPhoto2.src, alt: "Dr. Phil Wilkins treatment session" },
+    { src: IMAGES.doctorPhoto3.src, alt: "Dr. Phil Wilkins professional care" },
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <SEO 
         title="About Dr. Phil Wilkins DC ATC CNIM - Mobile Chiropractor Utah"
         description="Meet Dr. Phil Wilkins, a certified chiropractor with 25 years of experience in sports medicine, chiropractic medicine, and neurophysiology. Serving Salt Lake City, Provo, and Park City with mobile chiropractic care."
       />
+      <Header />
       {/* Hero Section with Background */}
       <section 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${IMAGES.doctorPhoto1})` }}
+        style={{ backgroundImage: `url(${IMAGES.doctorPhoto1.src})` }}
         role="img"
         aria-label="Dr. Phil Wilkins providing professional chiropractic care"
       >
@@ -92,6 +95,8 @@ const About = () => {
           </Carousel>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
