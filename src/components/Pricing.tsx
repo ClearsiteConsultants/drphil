@@ -62,7 +62,7 @@ const Pricing = () => {
         </div>
 
         {/* Discount Section */}
-        <div className="bg-muted rounded-lg p-8">
+        <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-8">
           <h3 className="text-xl md:text-2xl font-heading font-semibold text-center mb-8">
             Discount Rates Are Available For:
           </h3>

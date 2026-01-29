@@ -1044,3 +1044,26 @@ Changed Header.tsx to use `IMAGES.logoWhite` instead of `IMAGES.logoSimple`. The
 
 ### Status
 Task F023 completed successfully. All acceptance criteria and tests passing.
+
+## 2026-01-29 - F024: Bug Fix: Discount Rates Box Styling
+
+**Task**: Fixed grey background on discount rates box that made content hard to read
+
+**Changes Made**:
+1. Updated Pricing.tsx discount section styling (line 65)
+   - Changed from: `bg-muted rounded-lg p-8`
+   - Changed to: `rounded-lg border bg-card text-card-foreground shadow-sm p-8`
+   - Now matches pricing cards styling for visual consistency
+
+**Results**:
+- Discount section now uses same background as pricing cards (bg-card)
+- Added border and shadow-sm for consistency
+- Improved text contrast and readability
+- All tests passing (34/34)
+- Type checks passing
+
+**Acceptance Criteria Met**:
+- ✅ AC024-1: Discount rates box has same background styling as pricing cards
+- ✅ AC024-2: Text in discount section is clearly readable with proper contrast
+- ✅ AC024-3: Visual consistency between pricing cards and discount section
+- ✅ AC024-4: Meets WCAG AA color contrast requirements (using theme colors)
