@@ -150,8 +150,8 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [
         "F002"
       ],
@@ -159,37 +159,37 @@
         {
           "id": "AC003-1",
           "description": "Main heading displays: 'Adaptive Mobile Chiropractic'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC003-2",
           "description": "Subheading displays verbatim: 'I come to your home or office so you can get better faster without the hassle'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC003-3",
           "description": "CTA button labeled 'Schedule Now' links to http://drphilmobilechiro.janeapp.com/",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC003-4",
           "description": "Background image from original site is applied",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC003-5",
           "description": "Hero is fully responsive on mobile, tablet, and desktop",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC003-6",
           "description": "Text is readable over background (proper contrast/overlay)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -198,19 +198,19 @@
           "id": "T003-1",
           "type": "e2e",
           "description": "Click 'Schedule Now' button and verify JaneApp URL opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T003-2",
           "type": "visual",
           "description": "Verify hero displays correctly at 375px, 768px, 1920px widths",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T003-3",
           "type": "accessibility",
           "description": "Verify heading hierarchy (h1 for main heading)",
-          "passes": false
+          "passes": true
         }
       ]
     },
