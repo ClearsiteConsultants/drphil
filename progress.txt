@@ -320,3 +320,52 @@ Files Modified:
 - Updated: src/pages/Index.tsx (added Testimonials import and component)
 - Updated: package.json (added embla-carousel-autoplay dependency)
 - Updated: prd.json (marked F008 as complete with all acceptance criteria passing)
+
+=== 2026-01-29 22:25 UTC ===
+Task: F009 - Pricing Component
+Status: ✓ COMPLETED
+
+Actions taken:
+1. Created new Pricing.tsx component with three-tier pricing cards
+2. Extracted verbatim pricing information from scraped HTML content:
+   - Getting Started: $125 (Initial Visit & Treatment, 45-60 Minutes)
+   - Follow Up Treatment: $75 (Chiropractic Treatment, Stretching, Massage, 30 Minutes)
+   - Adjustment Only: $50 (15 Minutes)
+3. Implemented "Pricing" heading as specified in AC009-1
+4. Implemented discount section with heading "Discount Rates Are Available For:"
+5. Added five discount categories with appropriate lucide-react icons:
+   - Educators (GraduationCap icon)
+   - Military (Plane icon)
+   - Law Enforcement (Shield icon)
+   - Firefighters (Flame icon)
+   - Multiple Family Members Treated At The Same Visit (Users icon)
+6. Added "Get Started" CTA button linking to JaneApp URL
+   - Opens in new tab with proper security attributes
+7. Implemented responsive layout:
+   - Mobile: Pricing cards stacked (1 column)
+   - Desktop: Pricing cards side-by-side (3 columns)
+   - Discount icons: 1 col mobile, 2 cols tablet, 5 cols desktop
+8. Applied consistent styling with Card components and muted background
+9. Integrated component into Index page (after Testimonials, before WhyUs)
+10. Build passed successfully with no errors
+11. All acceptance criteria met
+
+Acceptance Criteria Met:
+ ✓ AC009-1: Heading displays "Pricing"
+ ✓ AC009-2: Three pricing tiers with correct amounts ($125, $75, $50)
+ ✓ AC009-3: Each tier includes verbatim description and duration
+ ✓ AC009-4: Discount section displays with correct heading
+ ✓ AC009-5: Five discount categories with appropriate icons
+ ✓ AC009-6: "Get Started" CTA links to JaneApp URL
+ ✓ AC009-7: Responsive layout (stacked mobile, 3 columns desktop)
+
+Test Results:
+ ✓ T009-1: All three pricing cards display with correct amounts
+ ✓ T009-2: All five discount icons display correctly
+ ✓ T009-3: "Get Started" button links to JaneApp URL (opens in new tab)
+ ✓ T009-4: Responsive layout verified via CSS grid breakpoints
+
+Files Modified:
+- Created: src/components/Pricing.tsx
+- Updated: src/pages/Index.tsx (added Pricing import and component)
+- Updated: prd.json (marked F009 as complete with all acceptance criteria passing)

@@ -569,8 +569,8 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 1.5,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F002"
       ],
@@ -578,43 +578,43 @@
         {
           "id": "AC009-1",
           "description": "Heading displays: 'Pricing'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-2",
           "description": "Three pricing tiers display: Getting Started ($125), Follow Up Treatment ($75), Adjustment Only ($50)",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-3",
           "description": "Each tier includes verbatim description and duration",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-4",
           "description": "Discount section displays with heading 'Discount Rates Are Available For:'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-5",
           "description": "Five discount categories shown with icons: Educators, Military, Law Enforcement, Firefighters, Multiple Family Members",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-6",
           "description": "CTA button 'Get Started' links to JaneApp URL",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC009-7",
           "description": "Pricing cards are responsive (stacked on mobile, 3 columns on desktop)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -623,25 +623,25 @@
           "id": "T009-1",
           "type": "visual",
           "description": "Verify all three pricing cards display with correct amounts",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T009-2",
           "type": "visual",
           "description": "Verify all five discount icons display correctly",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T009-3",
           "type": "functional",
           "description": "Click 'Get Started' button and verify JaneApp URL opens",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T009-4",
           "type": "responsive",
           "description": "Test pricing layout on mobile and desktop",
-          "passes": false
+          "passes": true
         }
       ]
     },
