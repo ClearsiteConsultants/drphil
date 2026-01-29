@@ -351,8 +351,8 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 1,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F001"
       ],
@@ -360,31 +360,31 @@
         {
           "id": "AC006-1",
           "description": "Heading displays: 'Meet the Doctor'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC006-2",
           "description": "Doctor name displays: 'Dr. Phil Wilkins DC ATC CNIM'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC006-3",
           "description": "Full biography from original site displays verbatim",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC006-4",
           "description": "Professional doctor photo displays beside bio",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC006-5",
           "description": "Layout is responsive (stacked on mobile, side-by-side on desktop)",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -393,19 +393,19 @@
           "id": "T006-1",
           "type": "visual",
           "description": "Verify doctor photo displays with good quality",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T006-2",
           "type": "content",
           "description": "Verify bio text matches original content exactly",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T006-3",
           "type": "responsive",
           "description": "Test layout on mobile (320px) and desktop (1920px)",
-          "passes": false
+          "passes": true
         }
       ]
     },
