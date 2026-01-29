@@ -5,7 +5,9 @@
     "lastUpdated": "2026-01-29",
     "status": "in_progress",
     "framework": "React + TypeScript + Vite + Tailwind CSS",
-    "estimatedHours": "15-20"
+    "estimatedHours": "15-20",
+    "bugFixesAdded": "2026-01-29",
+    "pendingBugFixes": 7
   },
   "requirements": [
     {
@@ -1581,6 +1583,400 @@
           "passes": true
         }
       ]
+    },
+    {
+      "id": "F021",
+      "title": "Bug Fix: Remove Contact Form from Homepage",
+      "description": "Remove contact form that appears at bottom of main page (booking should only be through JaneApp)",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [],
+      "acceptanceCriteria": [
+        {
+          "id": "AC021-1",
+          "description": "Contact form component is not rendered on homepage",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC021-2",
+          "description": "No contact form exists anywhere on the site",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC021-3",
+          "description": "All CTAs still properly link to JaneApp for booking",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T021-1",
+          "type": "manual",
+          "description": "Scroll through entire homepage and verify no contact form",
+          "passes": false
+        },
+        {
+          "id": "T021-2",
+          "type": "automated",
+          "description": "Search codebase for Contact component usage on homepage",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F022",
+      "title": "Bug Fix: Correct Footer Logo",
+      "description": "Replace current footer logo with black and white logo from original scraped source",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F001"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC022-1",
+          "description": "Identify black and white logo from scraped/images/full/ directory",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC022-2",
+          "description": "Black and white logo is displayed in footer instead of current logo",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC022-3",
+          "description": "Logo displays properly with correct contrast on footer background",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T022-1",
+          "type": "visual",
+          "description": "Verify footer displays black and white logo variant",
+          "passes": false
+        },
+        {
+          "id": "T022-2",
+          "type": "manual",
+          "description": "Compare footer logo with original scraped site screenshot",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F023",
+      "title": "Bug Fix: Header Logo Not Displaying",
+      "description": "Fix broken/missing logo in header that currently shows as white box",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F001"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC023-1",
+          "description": "Logo image displays correctly in header",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC023-2",
+          "description": "Logo has correct file path and image loads without errors",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC023-3",
+          "description": "Logo is properly sized and aligned in header",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC023-4",
+          "description": "Logo is visible on both light and dark backgrounds",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T023-1",
+          "type": "visual",
+          "description": "Verify header logo displays correctly on homepage",
+          "passes": false
+        },
+        {
+          "id": "T023-2",
+          "type": "automated",
+          "description": "Check browser console for image loading errors",
+          "passes": false
+        },
+        {
+          "id": "T023-3",
+          "type": "visual",
+          "description": "Verify logo displays on all pages (home, about, why house calls)",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F024",
+      "title": "Bug Fix: Discount Rates Box Styling",
+      "description": "Fix grey background on discount rates box that makes content hard to read - should match pricing box styles",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F009"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC024-1",
+          "description": "Discount rates box has same background styling as pricing cards",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC024-2",
+          "description": "Text in discount section is clearly readable with proper contrast",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC024-3",
+          "description": "Visual consistency between pricing cards and discount section",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC024-4",
+          "description": "Meets WCAG AA color contrast requirements (4.5:1 for text)",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T024-1",
+          "type": "visual",
+          "description": "Verify discount section matches pricing card styling",
+          "passes": false
+        },
+        {
+          "id": "T024-2",
+          "type": "automated",
+          "description": "Check color contrast ratio with accessibility tools",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F025",
+      "title": "Bug Fix: Theme Selector Functionality",
+      "description": "Fix theme selector/color button that currently doesn't affect page appearance",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 1,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F020"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC025-1",
+          "description": "Theme selector button properly switches between theme variants",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC025-2",
+          "description": "Page colors and styling update when theme is changed",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC025-3",
+          "description": "Theme preference is saved and persists across page navigation",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC025-4",
+          "description": "All components properly respond to theme changes",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T025-1",
+          "type": "functional",
+          "description": "Click theme selector and verify page appearance changes",
+          "passes": false
+        },
+        {
+          "id": "T025-2",
+          "type": "functional",
+          "description": "Navigate to different page and verify theme persists",
+          "passes": false
+        },
+        {
+          "id": "T025-3",
+          "type": "functional",
+          "description": "Refresh page and verify theme selection is maintained",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F026",
+      "title": "Bug Fix: About Page Header and Carousel Issues",
+      "description": "Fix missing header navigation on About page and broken images/links in carousel at bottom of page",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 1,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F011",
+        "F013"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC026-1",
+          "description": "Header with navigation displays on About page",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC026-2",
+          "description": "Navigation links in header work on About page",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC026-3",
+          "description": "All images in About page carousel load correctly without 404 errors",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC026-4",
+          "description": "All links in About page carousel are functional and point to valid resources",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC026-5",
+          "description": "Carousel displays properly with all 3 doctor photos",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T026-1",
+          "type": "functional",
+          "description": "Navigate to About page and verify header is present",
+          "passes": false
+        },
+        {
+          "id": "T026-2",
+          "type": "functional",
+          "description": "Click each navigation link in About page header",
+          "passes": false
+        },
+        {
+          "id": "T026-3",
+          "type": "automated",
+          "description": "Check browser console for image loading errors on About page",
+          "passes": false
+        },
+        {
+          "id": "T026-4",
+          "type": "functional",
+          "description": "Navigate through carousel and verify all images display",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F027",
+      "title": "Bug Fix: Replace Top Hero Image",
+      "description": "Replace current top hero image with DSC_0453-scaled.jpg from original site and reposition doctor-photo-1.jpg elsewhere on page",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F003"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC027-1",
+          "description": "Download and add DSC_0453-scaled.jpg from https://drphilmobilechiro.com/wp-content/uploads/sites/82/2020/01/DSC_0453-scaled.jpg",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC027-2",
+          "description": "Hero section uses DSC_0453-scaled.jpg as background image",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC027-3",
+          "description": "doctor-photo-1.jpg is relocated to another appropriate section on homepage",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC027-4",
+          "description": "New hero image displays correctly with proper aspect ratio and positioning",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T027-1",
+          "type": "visual",
+          "description": "Verify DSC_0453-scaled.jpg displays as hero background",
+          "passes": false
+        },
+        {
+          "id": "T027-2",
+          "type": "visual",
+          "description": "Verify doctor-photo-1.jpg appears in new location on page",
+          "passes": false
+        },
+        {
+          "id": "T027-3",
+          "type": "responsive",
+          "description": "Test new hero image displays well on mobile and desktop",
+          "passes": false
+        }
+      ]
     }
   ],
   "testSuites": [
@@ -1811,6 +2207,15 @@
     "contentSource": "All content must match verbatim from scraped HTML files in /scraped directory",
     "imageSource": "Images located in /scraped/images/full/ with hash names - need to be identified and renamed",
     "noGoogleMapsAPI": "Using static map image instead of Google Maps API integration",
+    "criticalBugs": [
+      "F021: Contact form still present on homepage (should be removed)",
+      "F022: Footer logo is incorrect (should use black/white version)",
+      "F023: Header logo broken/missing (shows white box)",
+      "F024: Discount rates box has poor contrast/readability",
+      "F025: Theme selector button is non-functional",
+      "F026: About page missing header navigation and has broken carousel images",
+      "F027: Hero image should use DSC_0453-scaled.jpg instead of current image"
+    ],
     "futureEnhancements": [
       "SEO meta tags optimization",
       "Theme/layout template variations",
