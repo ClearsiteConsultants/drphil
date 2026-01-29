@@ -81,7 +81,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001"],
+      "dependencies": [
+        "F001"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC002-1",
@@ -150,7 +152,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F002"],
+      "dependencies": [
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC003-1",
@@ -219,7 +223,9 @@
       "estimatedHours": 1.5,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F002"],
+      "dependencies": [
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC004-1",
@@ -282,7 +288,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001"],
+      "dependencies": [
+        "F001"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC005-1",
@@ -345,7 +353,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001"],
+      "dependencies": [
+        "F001"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC006-1",
@@ -406,44 +416,44 @@
       "priority": "P1",
       "phase": 3,
       "estimatedHours": 0.5,
-      "status": "not_started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [],
       "acceptanceCriteria": [
         {
           "id": "AC007-1",
           "description": "Heading displays: 'What to Expect'",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC007-2",
           "description": "Three checklist items display with check icons",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC007-3",
           "description": "All text is verbatim from original site",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC007-4",
           "description": "Step 1 mentions 45-60 minute initial visit",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC007-5",
           "description": "Step 2 mentions 30-minute follow-up appointments",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC007-6",
           "description": "Step 3 mentions Dr. Phil is 100% mobile",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -452,15 +462,16 @@
           "id": "T007-1",
           "type": "visual",
           "description": "Verify check icons appear beside each item",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T007-2",
           "type": "content",
           "description": "Verify all three steps display complete text",
-          "passes": false
+          "passes": true
         }
-      ]
+      ],
+      "completedDate": "2026-01-29"
     },
     {
       "id": "F008",
@@ -471,7 +482,9 @@
       "estimatedHours": 2,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F002"],
+      "dependencies": [
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC008-1",
@@ -558,7 +571,9 @@
       "estimatedHours": 1.5,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F002"],
+      "dependencies": [
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC009-1",
@@ -639,7 +654,10 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001", "F002"],
+      "dependencies": [
+        "F001",
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC010-1",
@@ -732,7 +750,10 @@
       "estimatedHours": 2,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001", "F002"],
+      "dependencies": [
+        "F001",
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC011-1",
@@ -813,7 +834,10 @@
       "estimatedHours": 1.5,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001", "F002"],
+      "dependencies": [
+        "F001",
+        "F002"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC012-1",
@@ -876,7 +900,11 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F003", "F011", "F012"],
+      "dependencies": [
+        "F003",
+        "F011",
+        "F012"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC013-1",
@@ -963,7 +991,11 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F003", "F011", "F012"],
+      "dependencies": [
+        "F003",
+        "F011",
+        "F012"
+      ],
       "futureEnhancement": true,
       "acceptanceCriteria": [
         {
@@ -1150,7 +1182,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F001"],
+      "dependencies": [
+        "F001"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC016-1",
@@ -1237,7 +1271,19 @@
       "estimatedHours": 2,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F003", "F004", "F005", "F006", "F007", "F008", "F009", "F010", "F011", "F012", "F013"],
+      "dependencies": [
+        "F003",
+        "F004",
+        "F005",
+        "F006",
+        "F007",
+        "F008",
+        "F009",
+        "F010",
+        "F011",
+        "F012",
+        "F013"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC017-1",
@@ -1354,7 +1400,9 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F013"],
+      "dependencies": [
+        "F013"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC018-1",
@@ -1459,7 +1507,10 @@
       "estimatedHours": 1,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F017", "F018"],
+      "dependencies": [
+        "F017",
+        "F018"
+      ],
       "acceptanceCriteria": [
         {
           "id": "AC019-1",
@@ -1552,7 +1603,9 @@
       "estimatedHours": 6,
       "status": "not_started",
       "passes": false,
-      "dependencies": ["F019"],
+      "dependencies": [
+        "F019"
+      ],
       "futureEnhancement": true,
       "acceptanceCriteria": [
         {
@@ -1854,6 +1907,10 @@
     "contentSource": "All content must match verbatim from scraped HTML files in /scraped directory",
     "imageSource": "Images located in /scraped/images/full/ with hash names - need to be identified and renamed",
     "noGoogleMapsAPI": "Using static map image instead of Google Maps API integration",
-    "futureEnhancements": ["SEO meta tags optimization", "Theme/layout template variations", "Analytics integration"]
+    "futureEnhancements": [
+      "SEO meta tags optimization",
+      "Theme/layout template variations",
+      "Analytics integration"
+    ]
   }
 }
