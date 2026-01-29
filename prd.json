@@ -2160,7 +2160,7 @@
         {
           "id": "AA001",
           "description": "Lighthouse Accessibility score > 90",
-          "passes": false
+          "passes": true
         },
         {
           "id": "AA002",
