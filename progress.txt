@@ -1067,3 +1067,46 @@ Task F023 completed successfully. All acceptance criteria and tests passing.
 - ✅ AC024-2: Text in discount section is clearly readable with proper contrast
 - ✅ AC024-3: Visual consistency between pricing cards and discount section
 - ✅ AC024-4: Meets WCAG AA color contrast requirements (using theme colors)
+
+========================================
+Date: 2026-01-29
+Task: F025 - Fix Theme Selector Functionality
+Status: COMPLETED
+========================================
+
+## Problem
+The theme selector button was not affecting page appearance because the theme system was setting CSS custom properties (--color-primary, etc.) but Tailwind was using different HSL-based variables (--primary, etc.).
+
+## Solution
+Updated useTheme.tsx to:
+1. Convert hex colors to HSL format for Tailwind compatibility
+2. Set both legacy CSS variables (for backward compatibility) and Tailwind HSL variables
+3. Properly map theme colors to all Tailwind semantic color variables (primary, secondary, accent, background, foreground, etc.)
+
+## Changes Made
+- Modified: src/hooks/useTheme.tsx
+  - Added hexToHSL() function to convert hex colors to HSL format
+  - Updated useEffect to set both --color-* and Tailwind HSL variables
+  - Ensured all Tailwind color tokens respond to theme changes
+
+- Created: src/test/theme.test.tsx
+  - Added comprehensive tests for all 4 acceptance criteria
+  - Tests verify theme switching, CSS variable updates, localStorage persistence, and component responsiveness
+
+## Test Results
+- All 4 new theme tests pass
+- All 38 total tests pass (34 existing + 4 new)
+- Type checking passes
+- All acceptance criteria met:
+  ✓ AC025-1: Theme selector properly switches between variants
+  ✓ AC025-2: Page colors update when theme changes
+  ✓ AC025-3: Theme preference persists across navigation
+  ✓ AC025-4: All components respond to theme changes
+
+## Technical Details
+The fix bridges the gap between the custom theme system and Tailwind's color system by:
+- Converting hex colors (#000000) to HSL format (0 0% 0%)
+- Dynamically setting CSS variables that Tailwind references
+- Maintaining backward compatibility with existing --color-* variables
+- Ensuring the theme switcher modal itself uses the new theme
+

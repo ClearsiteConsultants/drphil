@@ -1796,8 +1796,8 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 1,
-      "status": "not-started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F020"
       ],
@@ -1805,25 +1805,25 @@
         {
           "id": "AC025-1",
           "description": "Theme selector button properly switches between theme variants",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC025-2",
           "description": "Page colors and styling update when theme is changed",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC025-3",
           "description": "Theme preference is saved and persists across page navigation",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC025-4",
           "description": "All components properly respond to theme changes",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -1832,19 +1832,19 @@
           "id": "T025-1",
           "type": "functional",
           "description": "Click theme selector and verify page appearance changes",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T025-2",
           "type": "functional",
           "description": "Navigate to different page and verify theme persists",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T025-3",
           "type": "functional",
           "description": "Refresh page and verify theme selection is maintained",
-          "passes": false
+          "passes": true
         }
       ]
     },
