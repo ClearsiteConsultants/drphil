@@ -2,12 +2,12 @@
   "project": {
     "name": "Dr. Phil Mobile Chiropractic Website Rebuild",
     "version": "2.0",
-    "lastUpdated": "2026-01-29",
+    "lastUpdated": "2026-01-30",
     "status": "in_progress",
     "framework": "React + TypeScript + Vite + Tailwind CSS",
     "estimatedHours": "15-20",
-    "bugFixesAdded": "2026-01-29",
-    "pendingBugFixes": 9
+    "bugFixesAdded": "2026-01-30",
+    "pendingBugFixes": 6
   },
   "requirements": [
     {
@@ -2158,6 +2158,75 @@
           "passes": true
         }
       ]
+    },
+    {
+      "id": "F031",
+      "title": "Bug Fix: Horizontal Overflow on Mobile - Container Padding",
+      "description": "Fix horizontal scrolling issue on mobile screens caused by excessive container padding in Tailwind config and App.css. Container padding should be responsive (smaller on mobile, larger on desktop)",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "completed",
+      "passes": true,
+      "dependencies": [],
+      "acceptanceCriteria": [
+        {
+          "id": "AC031-1",
+          "description": "Tailwind container padding is responsive: 1rem on mobile (sm), 1.5rem on tablet (md), 2rem on desktop (lg+)",
+          "passes": true,
+          "testable": true
+        },
+        {
+          "id": "AC031-2",
+          "description": "Remove or reduce excessive padding from #root in App.css that causes mobile overflow",
+          "passes": true,
+          "testable": true
+        },
+        {
+          "id": "AC031-3",
+          "description": "No horizontal scrolling on mobile screens (320px-768px width)",
+          "passes": true,
+          "testable": true
+        },
+        {
+          "id": "AC031-4",
+          "description": "Body and html have 'overflow-x: hidden' to prevent any horizontal overflow",
+          "passes": true,
+          "testable": true
+        },
+        {
+          "id": "AC031-5",
+          "description": "All components maintain proper spacing without causing overflow at 320px, 375px, and 414px widths",
+          "passes": true,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T031-1",
+          "type": "responsive",
+          "description": "Test at 320px width (iPhone SE) - no horizontal scroll",
+          "passes": true
+        },
+        {
+          "id": "T031-2",
+          "type": "responsive",
+          "description": "Test at 375px width (iPhone standard) - no horizontal scroll",
+          "passes": true
+        },
+        {
+          "id": "T031-3",
+          "type": "responsive",
+          "description": "Test at 414px width (iPhone Plus) - no horizontal scroll",
+          "passes": true
+        },
+        {
+          "id": "T031-4",
+          "type": "functional",
+          "description": "Scroll through entire page on mobile and verify no horizontal scrollbar appears",
+          "passes": true
+        }
+      ]
     }
   ],
   "testSuites": [
@@ -2400,7 +2469,8 @@
       "F027: Hero image should use DSC_0453-scaled.jpg instead of current image (COMPLETE)",
       "F028: About/Why House Calls pages content cut off behind navigation bar",
       "F029: Original green theme variant missing from theme selector",
-      "F030: Duplicate images used - replace with new assets from original site"
+      "F030: Duplicate images used - replace with new assets from original site (COMPLETE)",
+      "F031: Horizontal overflow on mobile screens - container padding too large (COMPLETE)"
     ],
     "futureEnhancements": [
       "SEO meta tags optimization",
