@@ -2204,29 +2204,30 @@
         {
           "id": "CV001",
           "description": "Hero heading matches: 'Adaptive Mobile Chiropractic'",
-          "passes": false
+          "passes": true
         },
         {
           "id": "CV002",
           "description": "All 4 testimonials present with correct names",
-          "passes": false
+          "passes": true
         },
         {
           "id": "CV003",
           "description": "All 3 pricing tiers show correct amounts",
-          "passes": false
+          "passes": true
         },
         {
           "id": "CV004",
           "description": "Service area lists all 11 cities",
-          "passes": false
+          "passes": true
         },
         {
           "id": "CV005",
           "description": "Contact info correct: 801-369-3122, doctorphilchiro@gmail.com",
-          "passes": false
+          "passes": true
         }
-      ]
+      ],
+      "passes": true
     },
     {
       "id": "TS003",
