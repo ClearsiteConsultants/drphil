@@ -12,13 +12,10 @@ const Footer = () => {
               <img 
                 src={IMAGES.logoSimple.src} 
                 alt={IMAGES.logoSimple.alt}
-                className="h-12 w-auto"
+                className="w-auto"
                 loading="lazy"
               />
             </a>
-            <p className="text-sm text-slate-400 font-topbar">
-              Adaptive mobile chiropractic care bringing wellness to your home or office.
-            </p>
           </div>
 
           {/* Links */}

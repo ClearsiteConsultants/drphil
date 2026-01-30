@@ -4,8 +4,10 @@
  */
 
 // Logo images
-import logoSimple from '../assets/images/logo-simple.jpg';
-import logoWhite from '../assets/images/logo-white.jpg';
+import logoWhite from '../assets/images/logo_simple-768x207.png';
+// import logoSimple from '../assets/images/logo-simple.jpg';
+import logoSimple from '../assets/images/logo_white.png';
+// import logoWhite from '../assets/images/logo-white.jpg';
 
 // Service map
 import serviceMap from '../assets/images/service-map.jpg';

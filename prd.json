@@ -7,7 +7,7 @@
     "framework": "React + TypeScript + Vite + Tailwind CSS",
     "estimatedHours": "15-20",
     "bugFixesAdded": "2026-01-29",
-    "pendingBugFixes": 7
+    "pendingBugFixes": 9
   },
   "requirements": [
     {
@@ -1978,6 +1978,186 @@
           "passes": true
         }
       ]
+    },
+    {
+      "id": "F028",
+      "title": "Bug Fix: About Page Layout Cut Off Behind Nav",
+      "description": "Fix About page (and potentially Why House Calls page) where content is cut off behind top navigation bar - ensure proper spacing below header like other pages",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F011",
+        "F012",
+        "F013"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC028-1",
+          "description": "About page content starts below the navigation bar without being cut off",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC028-2",
+          "description": "Profile section on About page displays fully visible below header",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC028-3",
+          "description": "Why House Calls page checked for same issue and fixed if needed",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC028-4",
+          "description": "Consistent spacing/padding applied across all pages below navigation",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T028-1",
+          "type": "visual",
+          "description": "Navigate to About page and verify no content is hidden behind nav bar",
+          "passes": false
+        },
+        {
+          "id": "T028-2",
+          "type": "visual",
+          "description": "Navigate to Why House Calls page and verify layout is correct",
+          "passes": false
+        },
+        {
+          "id": "T028-3",
+          "type": "responsive",
+          "description": "Test About page layout on mobile and desktop sizes",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F029",
+      "title": "Bug Fix: Add Original Green Theme Variant",
+      "description": "Add theme variant with original green colors (#6c9932) for primary buttons and accents, since current themes don't include the original color scheme",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 1,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F002",
+        "F020"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC029-1",
+          "description": "New 'Green' theme variant added to theme selector",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC029-2",
+          "description": "Green theme uses #6c9932 for primary buttons and CTAs",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC029-3",
+          "description": "Green theme uses #10315a (navy) for secondary/accent colors",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC029-4",
+          "description": "Theme switcher properly applies green color scheme across all components",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC029-5",
+          "description": "Green theme maintains WCAG AA color contrast requirements",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T029-1",
+          "type": "functional",
+          "description": "Select Green theme and verify primary buttons use #6c9932",
+          "passes": false
+        },
+        {
+          "id": "T029-2",
+          "type": "visual",
+          "description": "Navigate through all pages with Green theme active",
+          "passes": false
+        },
+        {
+          "id": "T029-3",
+          "type": "automated",
+          "description": "Check color contrast ratios meet accessibility standards",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "F030",
+      "title": "Bug Fix: Replace Duplicate Images with New Assets",
+      "description": "Replace locations where same image is used multiple times with newly added image assets (DSC_0141-scaled.jpg, K1S_6976-scaled.jpg, Photo-Jan-09-7-42-10-PM-scaled.jpg)",
+      "priority": "P1",
+      "phase": 10,
+      "estimatedHours": 0.5,
+      "status": "not-started",
+      "passes": false,
+      "dependencies": [
+        "F001"
+      ],
+      "acceptanceCriteria": [
+        {
+          "id": "AC030-1",
+          "description": "Identify all locations where same image is used multiple times",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC030-2",
+          "description": "Replace duplicate usages with appropriate new images from assets",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC030-3",
+          "description": "Ensure new images maintain visual consistency and relevance in their context",
+          "passes": false,
+          "testable": true
+        },
+        {
+          "id": "AC030-4",
+          "description": "All image replacements have proper alt text",
+          "passes": false,
+          "testable": true
+        }
+      ],
+      "tests": [
+        {
+          "id": "T030-1",
+          "type": "visual",
+          "description": "Review all pages and verify no duplicate images are used inappropriately",
+          "passes": false
+        },
+        {
+          "id": "T030-2",
+          "type": "automated",
+          "description": "Check that all new images load correctly without errors",
+          "passes": false
+        }
+      ]
     }
   ],
   "testSuites": [
@@ -2215,7 +2395,10 @@
       "F024: Discount rates box has poor contrast/readability",
       "F025: Theme selector button is non-functional",
       "F026: About page missing header navigation and has broken carousel images",
-      "F027: Hero image should use DSC_0453-scaled.jpg instead of current image"
+      "F027: Hero image should use DSC_0453-scaled.jpg instead of current image (COMPLETE)",
+      "F028: About/Why House Calls pages content cut off behind navigation bar",
+      "F029: Original green theme variant missing from theme selector",
+      "F030: Duplicate images used - replace with new assets from original site"
     ],
     "futureEnhancements": [
       "SEO meta tags optimization",
