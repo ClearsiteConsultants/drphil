@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import doctorPhoto1 from "@/assets/images/doctor-photo-1.jpg";
+import { IMAGES } from "@/constants/images";
 import SEO from "@/components/SEO";
 
 const WhyHouseCalls = () => {
@@ -16,7 +16,7 @@ const WhyHouseCalls = () => {
       {/* Hero Section with Background Image */}
       <div 
         className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center pt-24"
-        style={{ backgroundImage: `url(${doctorPhoto1})` }}
+        style={{ backgroundImage: `url(${IMAGES.heroImage3.src})` }}
         role="img"
         aria-label="Chiropractic treatment background"
       >

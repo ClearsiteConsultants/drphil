@@ -1256,3 +1256,28 @@ Notes:
 - Maintains consistency with existing theme structure
 - All TypeScript types updated automatically
 - Theme is immediately available in the theme switcher
+
+## 2026-01-30 - F030: Bug Fix - Replace Duplicate Images with New Assets
+
+### Changes Made:
+1. **Updated src/constants/images.ts**:
+   - Added imports for three new image assets: DSC_0141-scaled.jpg, K1S_6976-scaled.jpg, Photo-Jan-09-7-42-10-PM-scaled.jpg
+   - Exported as heroImage2, heroImage3, heroImage4 with appropriate alt text
+
+2. **Updated src/pages/About.tsx**:
+   - Replaced doctorPhoto1 background with heroImage2 (DSC_0141-scaled.jpg) in hero section
+   - Kept doctorPhoto1 in carousel for consistent doctor representation
+
+3. **Updated src/pages/WhyHouseCalls.tsx**:
+   - Replaced direct import of doctorPhoto1 with IMAGES constant
+   - Changed background from doctorPhoto1 to heroImage3 (K1S_6976-scaled.jpg)
+
+### Results:
+- doctorPhoto1 now only used in 2 locations (DoctorProfile component and About page carousel) - appropriate for doctor photos
+- Background images now use diverse, contextually appropriate images
+- All new images have proper alt text for accessibility
+- Type checks pass ✓
+- All 38 tests pass ✓
+
+### Status:
+Task F030 completed successfully. All acceptance criteria met.

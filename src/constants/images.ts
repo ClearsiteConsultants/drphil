@@ -20,6 +20,11 @@ import doctorPhoto3 from '../assets/images/doctor-photo-3.jpg';
 // Hero image
 import heroImage from '../assets/images/DSC_0453-scaled.jpg';
 
+// Additional hero/background images
+import heroImage2 from '../assets/images/DSC_0141-scaled.jpg';
+import heroImage3 from '../assets/images/K1S_6976-scaled.jpg';
+import heroImage4 from '../assets/images/Photo-Jan-09-7-42-10-PM-scaled.jpg';
+
 export const IMAGES = {
   // Logos
   logoSimple: {
@@ -41,6 +46,20 @@ export const IMAGES = {
   heroImage: {
     src: heroImage,
     alt: 'Dr. Phil Wilkins - Mobile Chiropractic Care',
+  },
+
+  // Additional hero/background images
+  heroImage2: {
+    src: heroImage2,
+    alt: 'Professional chiropractic treatment environment',
+  },
+  heroImage3: {
+    src: heroImage3,
+    alt: 'Mobile chiropractic care setting',
+  },
+  heroImage4: {
+    src: heroImage4,
+    alt: 'Quality chiropractic care in comfortable surroundings',
   },
 
   // Doctor and office photos
