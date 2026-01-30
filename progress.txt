@@ -1281,3 +1281,24 @@ Notes:
 
 ### Status:
 Task F030 completed successfully. All acceptance criteria met.
+
+## 2026-01-30 - TS001: Smoke Tests Implementation
+
+### Task
+Implemented comprehensive smoke tests (TS001) to verify critical functionality:
+- ST001: Homepage loads without errors
+- ST002: All navigation links work
+- ST003: At least one JaneApp link works
+- ST004: Images load on homepage
+- ST005: Mobile menu opens
+
+### Implementation
+- Created `/src/test/smoke.test.tsx` with 8 test cases covering all 5 test requirements
+- Tests verify homepage rendering, navigation, JaneApp integration, image loading, and mobile menu functionality
+- All tests pass successfully using Vitest and React Testing Library
+- Type checks pass
+
+### Results
+ All 8 smoke tests pass
+ Type check passes
+ TS001 marked as complete in prd.json

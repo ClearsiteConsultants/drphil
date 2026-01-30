@@ -2170,29 +2170,30 @@
         {
           "id": "ST001",
           "description": "Homepage loads without errors",
-          "passes": false
+          "passes": true
         },
         {
           "id": "ST002",
           "description": "All navigation links work",
-          "passes": false
+          "passes": true
         },
         {
           "id": "ST003",
           "description": "At least one JaneApp link works",
-          "passes": false
+          "passes": true
         },
         {
           "id": "ST004",
           "description": "Images load on homepage",
-          "passes": false
+          "passes": true
         },
         {
           "id": "ST005",
           "description": "Mobile menu opens",
-          "passes": false
+          "passes": true
         }
-      ]
+      ],
+      "passes": true
     },
     {
       "id": "TS002",
