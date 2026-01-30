@@ -2047,8 +2047,8 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 1,
-      "status": "not-started",
-      "passes": false,
+      "status": "complete",
+      "passes": true,
       "dependencies": [
         "F002",
         "F020"
@@ -2057,31 +2057,31 @@
         {
           "id": "AC029-1",
           "description": "New 'Green' theme variant added to theme selector",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC029-2",
           "description": "Green theme uses #6c9932 for primary buttons and CTAs",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC029-3",
           "description": "Green theme uses #10315a (navy) for secondary/accent colors",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC029-4",
           "description": "Theme switcher properly applies green color scheme across all components",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC029-5",
           "description": "Green theme maintains WCAG AA color contrast requirements",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -2090,19 +2090,19 @@
           "id": "T029-1",
           "type": "functional",
           "description": "Select Green theme and verify primary buttons use #6c9932",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T029-2",
           "type": "visual",
           "description": "Navigate through all pages with Green theme active",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T029-3",
           "type": "automated",
           "description": "Check color contrast ratios meet accessibility standards",
-          "passes": false
+          "passes": true
         }
       ]
     },

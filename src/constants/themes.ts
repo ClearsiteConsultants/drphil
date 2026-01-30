@@ -1,4 +1,4 @@
-export type ThemeVariant = 'modern-minimal' | 'professional-medical' | 'warm-approachable';
+export type ThemeVariant = 'modern-minimal' | 'professional-medical' | 'warm-approachable' | 'green';
 
 export interface ThemeColors {
   primary: string;
@@ -74,6 +74,24 @@ export const themes: Record<ThemeVariant, Theme> = {
         accent: '#D97706',
       },
       border: '#FDE68A',
+    },
+  },
+  'green': {
+    id: 'green',
+    name: 'Green',
+    description: 'Original green and navy color scheme',
+    colors: {
+      primary: '#6c9932',
+      secondary: '#10315a',
+      accent: '#6c9932',
+      background: '#FFFFFF',
+      surface: '#F9FAFB',
+      text: {
+        primary: '#1F2937',
+        secondary: '#6B7280',
+        accent: '#6c9932',
+      },
+      border: '#E5E7EB',
     },
   },
 };
