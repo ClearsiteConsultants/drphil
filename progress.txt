@@ -1197,3 +1197,25 @@ RESULT:
 The site now has comprehensive accessibility features following WCAG 2.1 AA standards.
 All sections have proper semantic structure and ARIA landmarks for assistive technologies.
 
+
+## 2026-01-30 - F028: Bug Fix - About Page Layout Cut Off Behind Nav
+
+**Task:** Fix About page and Why House Calls page where content was cut off behind the fixed top navigation bar.
+
+**Changes Made:**
+1. Added `pt-24` (96px padding-top) to the hero section of About.tsx to account for fixed header
+2. Added `pt-24` (96px padding-top) to the hero section of WhyHouseCalls.tsx to account for fixed header
+3. Both pages now have proper spacing below the fixed navigation bar, ensuring content is fully visible
+
+**Testing:**
+- All TypeScript type checks passed
+- All 38 tests passed (4 test suites)
+- Visual layout now consistent with other pages
+
+**Acceptance Criteria Met:**
+- AC028-1: About page content starts below navigation bar ✓
+- AC028-2: Profile section displays fully visible below header ✓
+- AC028-3: Why House Calls page checked and fixed ✓
+- AC028-4: Consistent spacing applied across pages ✓
+
+**Status:** Completed - F028 passes: true

@@ -15,7 +15,7 @@ const WhyHouseCalls = () => {
       
       {/* Hero Section with Background Image */}
       <div 
-        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center pt-24"
         style={{ backgroundImage: `url(${doctorPhoto1})` }}
         role="img"
         aria-label="Chiropractic treatment background"

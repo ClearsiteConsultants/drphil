@@ -28,7 +28,7 @@ const About = () => {
       <Header />
       {/* Hero Section with Background */}
       <section 
-        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center"
+        className="relative min-h-[500px] flex items-center justify-center bg-cover bg-center pt-24"
         style={{ backgroundImage: `url(${IMAGES.doctorPhoto1.src})` }}
         role="img"
         aria-label="Dr. Phil Wilkins providing professional chiropractic care"

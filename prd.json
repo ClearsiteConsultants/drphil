@@ -1986,8 +1986,8 @@
       "priority": "P1",
       "phase": 10,
       "estimatedHours": 0.5,
-      "status": "not-started",
-      "passes": false,
+      "status": "completed",
+      "passes": true,
       "dependencies": [
         "F011",
         "F012",
@@ -1997,25 +1997,25 @@
         {
           "id": "AC028-1",
           "description": "About page content starts below the navigation bar without being cut off",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC028-2",
           "description": "Profile section on About page displays fully visible below header",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC028-3",
           "description": "Why House Calls page checked for same issue and fixed if needed",
-          "passes": false,
+          "passes": true,
           "testable": true
         },
         {
           "id": "AC028-4",
           "description": "Consistent spacing/padding applied across all pages below navigation",
-          "passes": false,
+          "passes": true,
           "testable": true
         }
       ],
@@ -2024,19 +2024,19 @@
           "id": "T028-1",
           "type": "visual",
           "description": "Navigate to About page and verify no content is hidden behind nav bar",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T028-2",
           "type": "visual",
           "description": "Navigate to Why House Calls page and verify layout is correct",
-          "passes": false
+          "passes": true
         },
         {
           "id": "T028-3",
           "type": "responsive",
           "description": "Test About page layout on mobile and desktop sizes",
-          "passes": false
+          "passes": true
         }
       ]
     },
